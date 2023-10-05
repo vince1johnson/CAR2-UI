@@ -1,0 +1,641 @@
+﻿html, body, #container {
+    height: 100%;
+    min-width:1000px !important;
+}
+    body > #container {
+        height: auto;
+        min-height: 82%;
+    }
+.container {
+    min-width: 600px !important;
+}
+body {
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    color: #3d3d3d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+h2 .small {
+    color: #6b6c6e !important;
+}
+.cui_banner {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0E630E;
+    width: 100%;
+    height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 10pt;
+}
+.current-user {
+    color: #FFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 20px;
+    float: right;
+    text-align: right;
+    padding: 10px 0 0 0;
+    font-size: 10pt !important;
+}
+.banner {
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/banner_bkgnd.png);
+    background-repeat: repeat-x;
+    border-bottom: #3d3d3d 1px solid;
+    margin: 0 auto;
+    background-color: #5f5f5f;
+    min-width: 800px;
+}
+#banner_alert{
+    min-width:100% !important;
+}
+.army_logo {
+    width: 78px;
+    height: 100px;
+    background-image: url(../img/army_logo.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    float: left;
+    margin-left: 25px;
+}
+.army_icon {
+    width: 80px;
+    height: 100px;
+    background-image: url(../img/army_icon_2023.png);
+    background-repeat: no-repeat;
+    background-size:64px 80px !important;
+    background-position: left;
+    float: left;
+    margin-left: 25px;
+}
+.army_emblem {
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/doa_emblem.png);
+    background-repeat: no-repeat;
+    float: right;
+    margin-right: 15px;
+}
+.banner_text {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFF;
+    padding-top: 1px;
+    width: 500px;
+    height: 75px;
+    float: left;
+}
+.site_acronym {
+    font-size: 22pt;
+    font-weight: bolder;
+    padding-top: 25px;
+    letter-spacing: 3px;
+}
+.site_title {
+    font-size: 11pt;
+    font-weight: bolder;
+    margin-top: 3px;
+}
+.car-version {
+    font-weight:lighter !important;
+    margin-left:5px !important;
+    font-size:9pt;
+}
+.alert {
+    min-width: 100% !important;
+    padding: 3px !important;
+    margin-bottom: 0 !important;
+    border-radius:0 !important;
+    border:0 !important;
+}
+.alert-dark {
+    background-color: #2D2D2D !important;
+}
+.nav_bar {
+    width: 100%;
+    height: 30px;
+    background-image: url(../img/nav_bar.png);
+    background-repeat: repeat-x;
+    border-bottom: #3d3d3d 1px solid;
+    margin: 0 auto;
+    float: left;
+}
+.nav_bar_button {
+    margin-top: 3px;
+    margin-left: 5px;
+    padding-top: 2px;
+    border: #3d3d3d 1px solid;
+    color: #3d3d3d;
+}
+.input[type=button] {
+    background-color: #dedede;
+}
+input[type=button]:hover {
+    background-color: #5f5f5f;
+    color: #FFFFFF;
+}
+.nav_bar_text {
+    color: #3d3d3d;
+    font-weight: bold;
+    font-size: 10pt;
+    padding-top: 8px;
+    padding-left: 15px;
+    float: left;
+}
+    .nav_bar_text a:link {
+        color: #666666;
+        text-decoration: none;
+    }
+    .nav_bar_text a:hover {
+        color: #3d3d3d;
+    }
+    .nav_bar_text a:visited {
+        color: #3d3d3d;
+    }
+h3 {
+    font-size: 16pt !important;
+    font-weight: bold !important;
+}
+h4 {
+    font-size: 13pt !important;
+    font-weight: bold !important;
+}
+h5 {
+    font-size: 14pt !important;
+}
+.text-red{
+    color:firebrick !important;
+}
+#user_dashboard {
+    min-width: 800px !important;
+}
+    #user_dashboard .col-4 {
+        padding: 0 !important;
+    }
+.breadcrumb {
+    padding: 7px 0 7px 0 !important;
+    margin: 0 auto !important;
+}
+    .breadcrumb a:link {
+        text-decoration: none !important;
+        color: #0dcaf0 !important;
+    }
+    .breadcrumb a:visited {
+        text-decoration: none !important;
+        color: #0dcaf0 !important;
+    }
+    .breadcrumb a:hover {
+        text-decoration: underline !important;
+        color: #FFFFFF !important;
+    }
+/*PAGE CONTENT*/
+.bold {
+    font-weight: bold !important;
+}
+.center {
+    text-align: center !important;
+}
+#content {
+    padding-bottom: 20px;
+}
+.pull-right {
+    float: right !important;
+}
+.pull-left {
+    float: left !important;
+}
+.padding-10 {
+    padding:10px !important;
+}
+.margin-right-10 {
+    margin-right: 10px !important;
+}
+.margin-right-15 {
+    margin-right: 15px !important;
+}
+.margin-right-20 {
+    margin-right: 20px !important;
+}
+.margin-right-50 {
+    margin-right: 50px !important;
+}
+.margin-left-10 {
+    margin-left: 10px !important;
+}
+.margin-left-20 {
+    margin-left: 20px !important;
+}
+.margin-left-50 {
+    margin-left: 50px !important;
+}
+.margin-top-5 {
+    margin-top: 5px !important;
+}
+.margin-top-10 {
+    margin-top: 10px !important;
+}
+.margin-top-20 {
+    margin-top: 20px !important;
+}
+.margin-top-40 {
+    margin-top: 40px !important;
+}
+.margin-top-50 {
+    margin-top: 50px !important;
+}
+.margin-top-neg-30 {
+    margin-top: -30px !important;
+}
+.margin-top-neg-20 {
+    margin-top: -20px !important;
+}
+.margin-top-neg-15 {
+    margin-top: -15px !important;
+}
+.margin-top-neg-10 {
+    margin-top: -10px !important;
+}
+.margin-top-neg-5 {
+    margin-top: -5px !important;
+}
+.margin-bottom-5 {
+    margin-bottom: 5px !important;
+}
+.margin-bottom-10 {
+    margin-bottom: 10px !important;
+}
+.margin-bottom-20 {
+    margin-bottom: 20px !important;
+}
+.margin-bottom-30 {
+    margin-bottom: 30px !important;
+}
+.margin-left-15 {
+    margin-left: 15px !important;
+}
+.margin-left-25 {
+    margin-left: 25px !important;
+}
+.margin-left-neg-20 {
+    margin-left: -20px !important;
+}
+.margin-left-neg-50 {
+    margin-left: -50px !important;
+}
+.padding-left-5 {
+    padding-left: 5px !important;
+}
+.padding-left-10 {
+    padding-left: 10px !important;
+}
+.padding-top-5 {
+    padding-top: 5px !important;
+}
+.padding-top-20 {
+    padding-top: 20px !important;
+}
+.padding-top-40 {
+    padding-top: 40px !important;
+}
+.padding-top-neg-10 {
+    padding-top: -10px !important;
+}
+.padding-bottom-20 {
+    padding-bottom: 20px !important;
+}
+.match-disabled {
+    background-color: #eaecef !important;
+}
+#account_details_sa tr {
+    padding: 0 !important;
+}
+#footer {
+    background-color: #0E630E;
+    color: #F7F7F7;
+    font-size: 10pt;
+    text-align: center;
+    clear: both;
+    position: fixed;
+    height: 20px;
+    bottom: 0;
+    width: 100%;
+}
+    #footer a:link {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    #footer a:visited {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    #footer a:hover {
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+.footer_lt {
+    float: left;
+    text-align: left;
+    padding-left: 50px;
+}
+.footer_rt {
+    float: right;
+    text-align: right;
+    padding-right: 50px;
+}
+.jumbotron {
+    background-color: #FFF !important;
+    border-radius: 5px !important;
+    margin: 10px -20px 0 -20px !important;
+}
+#documents_modal .form-control {
+    border: 1px solid #e9ecef !important;
+    background-color: #e9ecef !important;
+}
+#user_profile .form-floating {
+    margin: 2px 0 2px 0 !important;
+}
+.profile-format {
+    background-color: #e9ecef !important;
+    border: 1px solid rgb(206, 212, 218) !important;
+    border-radius: 5px !important;
+    padding: 5px !important;
+}
+.form-noborder .form-control:disabled {
+    background-color: #FFF !important;
+    border: none !important;
+}
+.form-noborder ul {
+    list-style: none !important;
+}
+select {
+    padding: -2px 0 -2px 0 !important;
+}
+.required:after {
+    content: "*";
+    color: red;
+    padding-left:3px !important;
+}
+input[type=text] {
+    width: 100%;
+}
+#io-review .form-floating > .form-control:not(:placeholder-shown) {
+    padding-top:7px !important;
+    padding-bottom: 0 !important;
+
+}
+
+#documents_modal .igt-100 {
+    width: 100px !important;
+}
+#documents_modal .card {
+    border-radius: 5px !important;
+    align-content: center !important;
+}
+#user_roles {
+    min-width:1100px !important;
+}
+#user_roles .nav-link {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+#user_roles .nav-tabs .active {
+    font-weight: bold !important;
+}
+#user_roles .nav-tabs{
+    min-width:570px !important;
+}
+#user_roles .nav-item {
+    min-width: 150px !important;
+}
+
+#user_roles .card-header {
+    background-color: #FFF !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    border: none none 1px none !important;
+    padding-bottom: 15px !important;
+}
+#user_roles .card {
+    border: none !important;
+}
+#user_roles .role-tab-message {
+    padding: 40px 15px 0 15px !important;
+}
+#user_roles .card-header {
+    margin-top: 4px !important;
+    padding: 6px 16px 12px 0px !important
+}
+#user_accounts .card-header {
+    background-color: #FFF !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    border: none !important;
+    padding-bottom: 15px !important;
+}
+#user_accounts .card{
+    border: none !important;
+}
+#user_accounts .form-control{
+    border: none !important;
+}
+    #user_accounts li {
+        list-style: none !important;
+    }
+#car_user_dashboard .card-header {
+    border-radius: 5px !important;
+    text-align: center !important;
+    color: #FFFFFF !important;
+    border-bottom: none !important;
+}
+#car_user_dashboard .card-body {
+    margin-top: -10px !important;
+    text-align: center !important;
+    color: #FFFFFF !important;
+    border-radius: 5px !important;
+    align-content: center !important;
+}
+#car_user_dashboard .card-1 {
+    background-color: #1E1E1E !important;
+    background-image: linear-gradient(to right, #383838, #1E1E1E) !important;
+}
+#car_user_dashboard .card-2 {
+    background-color: #2D2D2D !important;
+    background-image: linear-gradient(to right, #1E1E1E, #2D2D2D) !important;
+}
+#car_user_dashboard .card-3 {
+    background-color: #383838 !important;
+    background-image: linear-gradient(to right, #2D2D2D, #383838, #0C0C0C) !important;
+}
+#car_user_dashboard .card-4 {
+    background-color: #0C0C0C !important;
+    background-image: linear-gradient(to right, #0C0C0C, #383838) !important;
+}
+#car_user_dashboard .card-bg {
+    min-height: 150px !important;
+    background-color: none !important;
+    background-image: url(../img/car_card_dark_camo.png);
+    background-position: left;
+    color: #FFFFFF !important;
+    border-radius: 5px !important;
+}
+#car_user_dashboard .card-bg2 {
+    min-height: 150px !important;
+    background-color: none !important;
+    background-image: url(../img/car_card_dark_camo2.png);
+    background-position: left;
+    color: #FFFFFF !important;
+    border-radius: 5px !important;
+}
+#admin_systems .card-header {
+    background-color: #FFF !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    border: none !important;
+    padding-bottom: 15px !important;
+}
+
+#admin_systems .card {
+    border: none !important;
+}
+.card-bg-profile {
+    min-height: 150px !important;
+    background-color: #eaecef !important;
+    background-position: left;
+    border-radius: 5px !important;
+}
+.card-bg-profile h5 {
+        color: #000 !important;
+        margin-top: 10px !important;
+}
+#car_user_dashboard .card-body-bg {
+    padding: 15px !important;
+}
+#car_user_dashboard .card-header-bg {
+    text-align: left !important;
+    background: none !important;
+}
+#user-profile .card-header-bg {
+    text-align: left !important;
+    background: none !important;
+    border-bottom: none !important;
+}
+#car_user_dashboard a:link {
+    text-decoration: none !important;
+    color: #5DC7EC !important;
+}
+.profile-body {
+    background-color: #eaecef !important;
+}
+#user_profile .alert {
+    min-height: 55px !important;
+    border-radius: 10px !important;
+    border: 1px solid #79282c !important;
+}
+#user_profile .alert-profile {
+    padding: 12px 15px 0 15px !important;
+}
+#car_user_dashboard a:visited {
+    text-decoration: none !important;
+    color: #5DC7EC !important;
+}
+#car_user_dashboard a:hover {
+    text-decoration: none !important;
+    color: #000 !important;
+}
+#car_user_dashboard .btn-outline-info{
+    border-color:#FFFFFF !important;
+}
+#car_user_dashboard .card-bg-icon {
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    background-size: 40px;
+    margin: 10px 20px 0 20px !important;
+}
+.card-icon {
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    background-size: 100px;
+    text-align: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.small-icon {
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    background-size: 20px;
+    text-align: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+#role_details .form-floating {
+    background-color:#FFF !important;
+    border: none !important;
+}
+#role_details .rev-name {
+    padding: 0 0 0 10px !important;
+    color: grey !important;
+    font-style:italic !important;
+}
+.user-roles{
+    min-height:300px !important;
+}
+.page_instr {
+    margin: 10px 0 0 20px !important;
+}
+.icon-profile {
+    background-image: url(../img/icon_profile.png);
+}
+.icon-docs {
+    background-image: url(../img/icon_document.png);
+}
+.icon-accts {
+    background-image: url(../img/icon_accounts.png);
+}
+.icon-roles {
+    background-image: url(../img/icon_roles.png);
+}
+.icon-new {
+    background-image: url(../img/icon_new.png);
+}
+.icon-new-dark {
+    background-image: url(../img/icon_new_dark.png);
+}
+.icon-success {
+    background-image: url(../img/icon_success.png);
+}
+.user_tables td {
+    padding: 5px 0 0 15px;
+    border-bottom: 2px solid #f2f2f2 !important;
+}
+#user_doc_table .btn-sm{
+    margin-top:-3px !important;
+}
+/*SAAR CONTENT*/
+#saar .row {
+    line-height: 18px !important;
+}
+#saar .jumbotron {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+.input-fill {
+    width: 100% !important;
+}
+.nav-link[data-toggle].collapsed:after {
+    content: " ▾";
+}
+.nav-link[data-toggle]:not(.collapsed):after {
+    content: " ▴";
+}
+@media(min-width: 576px) {
+    .jumbotron {
+        padding: 1rem 1rem;
+    }
+}

@@ -1,0 +1,542 @@
+﻿@page
+@model CAR2_UI.Pages.documentsModel
+@{
+    ViewData["Title"] = "Documents";
+
+}
+<div id="user_documents" class="container">
+
+    <!--USER INFO-->
+
+    <header>
+        <div class="row margin-top-10">
+            <div class="col-12">
+                <nav class="navbar static-top">
+                    <h2 class="text-muted">First M Last: &nbsp;<small> My Documents</small></h2>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--Upload New Document button-->
+
+        <div class="row margin-top-20">
+            <div class="col-md-12">
+                <h4>
+                    Access Request Supporting Documents
+                </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <div class="btn-toolbar pull-left" role="toolbar" aria-label="Button Toolbar">
+                        <div class="btn-group me-2" role="group" aria-label="Group 1">
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Upload a new document...
+                            </button>
+                            <div class="page_instr"> Accepted formats: pdf, docx, xlsx, png and jpg.  Click on the document title to download a copy.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Documents Table-->
+
+        <div id="user_doc_table" class="row">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <table class="table table-sm table-hover table-borderless table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Document Title
+                                </th>
+                                <th>
+                                    Type
+                                </th>
+                                <th>
+                                    Upload Date
+                                </th>
+                                <th>
+                                    Completed Date
+                                </th>
+                                <th>
+                                    Exp. Date
+                                </th>
+                                <th>
+                                    &nbsp;
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="user_tables">
+                            <tr>
+                                <td>
+                                    <a href="#">My Cyber Awareness 2022.pdf</a>
+                                </td>
+                                <td>
+                                    Annual Cyber Awareness Training
+                                </td>
+                                <td>
+                                    09/20/2022
+                                </td>
+                                <td>
+                                    09/01/2022
+                                </td>
+                                <td>
+                                    09/01/2023
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                        Update
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">My SecurityPlus cert.pdf</a>
+                                </td>
+                                <td>
+                                    Security+
+                                </td>
+                                <td>
+                                    09/01/2021
+                                </td>
+                                <td>
+                                    08/25/2020
+                                </td>
+                                <td>
+                                    08/25/2023
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#">
+                                        Update
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">My IAT CE April 2023.pdf</a>
+                                </td>
+                                <td>
+                                    IAT Training CE
+                                </td>
+                                <td>
+                                    05/01/2023
+                                </td>
+                                <td>
+                                    04/25/2023
+                                </td>
+                                <td>
+                                    n/a
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">My AAG VPN Agreement.pdf</a>
+                                </td>
+                                <td>
+                                    Enclave Requirement
+                                </td>
+                                <td>
+                                    09/25/2022
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    n/a
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">My AAG AUP.pdf</a>
+                                </td>
+                                <td>
+                                    Enclave Requirement
+                                </td>
+                                <td>
+                                    09/25/2022
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    n/a
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">My AR 380-67.pdf</a>
+                                </td>
+                                <td>
+                                    Security Officer AR 380-67
+                                </td>
+                                <td>
+                                    09/25/2022
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    n/a
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">My PED training cert.jpg</a>
+                                </td>
+                                <td>
+                                    Enclave Requirement
+                                </td>
+                                <td>
+                                    09/25/2022
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    n/a
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">My PII training cert.pdf</a>
+                                </td>
+                                <td>
+                                    Enclave Requirement
+                                </td>
+                                <td>
+                                    09/25/2022
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    n/a
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">My Phishing Awareness training cert.pdf</a>
+                                </td>
+                                <td>
+                                    Enclave Requirement
+                                </td>
+                                <td>
+                                    09/25/2022
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    n/a
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row margin-top-50">
+            <div class="col-md-12">
+                <h4>
+                    CAR Generated DD Form 2875 - System Authorization Access Requests (SAAR)
+                </h4>
+            </div>
+        </div>
+        <div id="user_doc_table" class="row margin-top-neg-20">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <table class="table table-sm table-hover table-borderless table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    System
+                                </th>
+                                <th>
+                                    Role
+                                </th>
+                                <th>
+                                    Disposition
+                                </th>
+                                <th>
+                                    Approval Date
+                                </th>
+                                <th>
+                                    &nbsp;
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="user_tables">
+                            <tr>
+                                <td>
+                                    ABC
+                                </td>
+                                <td>
+                                    <a asp-page="saar">ABC vGFE Desktop.pdf</a>
+                                </td>
+                                <td>
+                                    Deactivate
+                                </td>
+                                <td>
+                                    10/01/2022
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ABC
+                                </td>
+                                <td>
+                                    <a asp-page="saar">ABC Citrix Administrator 2875.pdf</a>
+                                </td>
+                                <td>
+                                    Modification
+                                </td>
+                                <td>
+                                    10/01/2022
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ABC
+                                </td>
+                                <td>
+                                    <a asp-page="saar">ABC vGFE Desktop.pdf</a>
+                                </td>
+                                <td>
+                                    Initial
+                                </td>
+                                <td>
+                                    05/10/2021
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ABC
+                                </td>
+                                <td>
+                                    <a asp-page="saar">ABC Citrix Administrator 2875.pdf</a>
+                                </td>
+                                <td>
+                                    Initial
+                                </td>
+                                <td>
+                                    07/15/2020
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-- Document upload Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div id="documents_modal" class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="UploadNewDocument">Upload a new supporting document</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="input-group mb-3">
+                        <div class="input-group-text igt-100" style="flex: 1;">
+                            <input id="files" type="file" class="form-control">
+                        </div>
+                    </div>
+                    <p class="center text-muted">
+                        Accepted formats: pdf, docx, xlsx, png and jpg
+                    </p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-text igt-100">
+                            <span>Doc. Type</span>
+                        </div>
+                        <div class="input-group-text" style="flex: 1;">
+                            <select class="form-select">
+                                <option value="0">Choose...</option>
+                                <optgroup label="8570 Compliance">
+                                    <option value="1">Annual Cyber Awareness Training</option>
+                                    <option value="2">Security+</option>
+                                    <option value="3">IAT Training CE</option>
+                                </optgroup>
+                                <optgroup label="Reviewer Designation Letter">
+                                    <option value="4">Security Officer AR 380-67</option>
+                                    <option value="5">Information Owner AR 123-45</option>
+                                    <option value="6">ISSO AR 123-45</option>
+                                </optgroup>
+                                <optgroup label="Misc.">
+                                    <option value="7">Enclave Requirement</option>
+                                    <option value="8">Other...</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-text igt-100">
+                            <span>Other</span>
+                        </div>
+                        <div class="input-group-text" style="flex: 1;">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-text igt-100">
+                            <span>Completed</span>
+                        </div>
+                        <div class="input-group-text" style="flex: 1;">
+                            <input type="date">
+                        </div>
+                    </div>
+                    <p class="center text-muted">
+                        Completed Date is required for Cyber Awareness Training
+                    </p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-text igt-100">
+                            <span>Exp. Date</span>
+                        </div>
+                        <div class="input-group-text" style="flex: 1;">
+                            <input type="date">
+                        </div>
+                        <div class="input-group-text">
+                            <span class="pull-right">n/a</span>
+                        </div>
+                        <div class="input-group-text">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <p class="center text-muted">
+                        Cyber Awareness Training expires one year from completion
+                    </p>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="col-12">
+                    <span class="pull-right">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-success">Upload</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Document Replace Modal -->
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div id="documents_modal" class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="UploadNewDocument">Update Supporting Document</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="input-group mb-3">
+                        <div class="input-group-text igt-100">
+                            <span>Replacing</span>
+                        </div>
+                        <div class="input-group-text" style="flex: 1;">
+                            <input type="text" class="form-control" disabled placeholder="My Cyber Awareness 2022.pdf" />
+                        </div>
+                    </div>
+                    <p class="center text-muted">
+                        replace with
+                    </p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-text igt-100" style="flex: 1;">
+                            <input id="files" type="file" class="form-control">
+                        </div>
+                    </div>
+                    <p class="center text-muted">Accepted formats: pdf, docx, xlsx, png and jpg</p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-text igt-100">
+                            <span>Doc. Type</span>
+                        </div>
+                        <select class="form-select" disabled>
+                            <option value="0">Choose...</option>
+                            <optgroup label="8570 Compliance">
+                                <option value="1" selected>Annual Cyber Awareness Training</option>
+                                <option value="2">Security+</option>
+                                <option value="3">IAT Training CE</option>
+                            </optgroup>
+                            <optgroup label="Reviewer Designation Letter">
+                                <option value="4">Security Officer AR 380-67</option>
+                                <option value="5">Information Owner AR 123-45</option>
+                                <option value="6">ISSO AR 123-45</option>
+                            </optgroup>
+                            <optgroup label="Misc.">
+                                <option value="7">Enclave Requirement</option>
+                                <option value="8">Other...</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-text igt-100">
+                            <span>Completed</span>
+                        </div>
+                        <div class="input-group-text" style="flex: 1;">
+                            <input type="date">
+                        </div>
+                    </div>
+                    <p class="center text-muted">
+                        Completed Date is required for Cyber Awareness Training
+                    </p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-text igt-100">
+                            <span>Exp. Date</span>
+                        </div>
+                        <div class="input-group-text" style="flex: 1;">
+                            <input type="date">
+                        </div>
+                        <div class="input-group-text">
+                            <span class="pull-right">n/a</span>
+                        </div>
+                        <div class="input-group-text">
+                            <input type="checkbox" disabled>
+                        </div>
+                    </div>
+                    <p class="center text-muted">
+                        Cyber Awareness Training Expires one year from Completion
+                    </p>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="col-12">
+                    <span class="pull-right">
+                        <button type="button" class="btn btn-danger">Delete Original</button>
+                        <button type="button" class="btn btn-success">Replace</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,145 @@
+﻿@page
+@model CAR2_UI.Pages.user_dashboardModel
+@{
+    ViewData["Title"] = "My Dashboard";
+
+}
+
+<!--ADMIN ALERT BANNER-->
+
+<div id="banner_alert">
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-info">
+                <span class="padding-left-20">
+                    <strong>CAR Admin notification banner...</strong>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="car_user_dashboard" class="container">
+
+    <!--PAGE CONTENT-->
+
+    <header>
+        <div class="row">
+            <div class="col-12 margin-top-10">
+                <nav class="navbar static-top">
+                    <h2 class="text-muted">First M Last: &nbsp;<small> My Dashboard</small></h2>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--Dashboard links-->
+
+        <div id="dashboard_row_1" class="row">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card card-1">
+                                <h5 class="card-header">
+                                    My Profile
+                                </h5>
+                                <div class="card-body">
+                                    <div class="card-icon icon-profile"></div>
+                                    <p class="card-text">
+                                        <a asp-page="user_profile" type="button" class="btn btn-outline-info margin-top-10 position-relative">
+                                            View or Edit Contact Info
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card card-2">
+                                <h5 class="card-header">
+                                    My Documents
+                                </h5>
+                                <div class="card-body">
+                                    <div class="card-icon icon-docs"></div>
+                                    <p class="card-text">
+                                        <a asp-page="user_documents" type="button" class="btn btn-outline-info margin-top-10 position-relative">Manage My Attachments</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card card-3">
+                                <h5 class="card-header">
+                                    My Accounts
+                                </h5>
+                                <div class="card-body">
+                                    <div class="card-icon icon-accts">
+                                    </div>
+                                    <p class="card-text">
+                                        <a asp-page="user_accounts" type="button" class="btn btn-outline-info margin-top-10 position-relative">
+                                            Account and Token Info
+                                            <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger">
+                                                !
+                                                <span class="visually-hidden">unread messages</span>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card card-4">
+                                <h5 class="card-header">
+                                    My System Roles
+                                </h5>
+                                <div class="card-body">
+                                    <div class="card-icon icon-roles"></div>
+                                    <p class="card-text">
+                                        <a asp-page="user_roles" type="button" class="btn btn-outline-info margin-top-10 position-relative">
+                                            View My System Roles
+                                            <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-success">
+                                                4
+                                                <span class="visually-hidden">unread messages</span>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dashboard_row_2" class="row margin-top-neg-15">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <div class="card-bg">
+                        <h5 class="card-header card-header-bg">
+                            Request System Access
+                        </h5>
+                        <div class="card-body-bg">
+                            <div class="btn-toolbar pull-left" role="toolbar" aria-label="Button Toolbar">
+                                <div class="btn-group me-2" role="group" aria-label="Group 1">
+                                    <div class="card-bg-icon icon-new"></div>
+                                    <p class="card-text">
+                                        <a asp-page="new_request" type="button" class="btn btn-outline-info margin-top-10 position-relative">New System Access request...</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn-group pull-right margin-right-20" role="group" aria-label="Group 2">
+                                <p class="card-text">
+                                    <a asp-page="user_requests" type="button" class="btn btn-outline-info margin-top-10 position-relative">
+                                        Track My Requests
+                                        <span class="position-absolute top-0 start-100 translate-middle badge border text-dark border-light rounded-circle bg-info">
+                                            2
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>

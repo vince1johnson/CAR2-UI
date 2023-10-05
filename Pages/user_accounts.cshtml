@@ -1,0 +1,294 @@
+﻿@page
+@model CAR2_UI.Pages.accountsModel
+@{
+    ViewData["Title"] = "My Accounts";
+}
+
+<div id="user_accounts" class="container">
+
+    <!--USER INFO-->
+
+    <header>
+        <div class="row margin-top-10">
+            <div class="col-12">
+                <nav class="navbar static-top">
+                    <h2 class="text-muted">First M Last: &nbsp;<small> My Accounts</small></h2>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--User UPN-CN-->
+    @*<div class="row">
+            <div class="col-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid" value="123456789012345@mil" disabled>
+                    <label for="floatingInputGrid">UPN</label>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid" value="FIRST.M.LAST.123456789012345" disabled>
+                    <label for="floatingInputGrid">Common Name</label>
+                </div>
+            </div>
+        </div>*@
+
+    <!--Page Content-->
+    <div class="margin-top-10">
+        <a asp-page="#" type="button" class="btn btn-outline-success">Refresh from AD</a>
+        <a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#user-acct-table" role="button">View All Accounts</a>
+    </div>
+    <div class="row margin-top-20">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-text">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect">
+                                <option value="0">Choose...</option>
+                                <option value="1">123456789012345@mil</option>
+                                <option value="2" selected>First.M.Last.SA</option>
+                                <option value="3">USERSUP</option>
+                            </select>
+                            <label for="floatingSelect">Select an Account...</label>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="margin-top-20">Selected Account Options</h4>
+                <div class="btn-group" role="group" aria-label="Selected Account Options">
+                    <a asp-page="#" type="button" class="btn btn-outline-primary">Update Password</a>
+                    <a asp-page="#" type="button" class="btn btn-outline-primary">Associate to Alt-Token</a>
+                    <a asp-page="user_alt_tokens" type="button" class="btn btn-outline-primary">Manage My Alt-Tokens</a>
+                </div>
+                <div class="margin-top-10">
+                    <a asp-page="#" type="button" class="btn btn-outline-success">Enable Account</a>
+                    <a asp-page="#" type="button" class="btn btn-outline-secondary pull-right">Audit Account History</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card margin-left-20">
+                <p class="card-text">
+                    <strong>Selected Account:</strong> First.M.Last.SA
+                    <br />
+                    <strong>Status:</strong> Account Disabled
+                    <br />
+                    <strong>Authentication Type:</strong> Password
+                    <br />
+                    <strong>Status:</strong> Account Successfully Processed
+                    <br />
+                    <strong>Domain(s):</strong> Production, Test
+                    <br />
+                    <strong>Associated Roles:</strong>
+                    <ul class="margin-top-neg-15">
+                        <li>
+                            ABC: ABC Role 001
+                        </li>
+                        <li>
+                            ABC: ABC Role 002
+                        </li>
+                        <li>
+                            ABC: ABC Role 003
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="user-acct-table" class="collapse margin-top-20">
+        <div id="user_doc_table" class="row">
+            <div class="margin-top-20">
+                <table class="table table-sm table-hover table-borderless table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                Account
+                            </th>
+                            <th>
+                                Status
+                            </th>
+                            <th>
+                                Auth. Type
+                            </th>
+                            <th>
+                                Domain(s)
+                            </th>
+                            <th>
+                                &nbsp;
+                            </th>
+                            <th>
+                                &nbsp;
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="user_tables">
+                        <tr>
+                            <td>
+                                First.M.Last1.SA
+                            </td>
+                            <td>
+                                Disabled
+                            </td>
+                            <td>
+                                Password
+                            </td>
+                            <td>
+                                Production
+                            </td>
+                            <td>
+                                <a asp-page="#" type="button" class="btn btn-sm btn-outline-success pull-right">Enable</a>
+                            </td>
+                            <td>
+                                <a asp-page="#" type="button" class="btn btn-sm btn-outline-secondary pull-right">Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                First.M.Last1.SA
+                            </td>
+                            <td>
+                                Enabled
+                            </td>
+                            <td>
+                                Password
+                            </td>
+                            <td>
+                                Test
+                            </td>
+                            <td>
+                                <a asp-page="#" type="button" class="btn btn-sm btn-outline-success pull-right">Enable</a>
+                            </td>
+                            <td>
+                                <a asp-page="#" type="button" class="btn btn-sm btn-outline-secondary pull-right">Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                First.M.Last1.SA
+                            </td>
+                            <td>
+                                Enabled
+                            </td>
+                            <td>
+                                Password
+                            </td>
+                            <td>
+                                Development
+                            </td>
+                            <td>
+                                <a asp-page="#" type="button" class="btn btn-sm btn-outline-success pull-right">Enable</a>
+                            </td>
+                            <td>
+                                <a asp-page="#" type="button" class="btn btn-sm btn-outline-secondary pull-right">Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                098765432112345@mil
+                            </td>
+                            <td>
+                                Enabled
+                            </td>
+                            <td>
+                                PIV/Token
+                            </td>
+                            <td>
+                                Production
+                            </td>
+                            <td>
+                                <a asp-page="#" type="button" class="btn btn-sm btn-outline-success pull-right">Enable</a>
+                            </td>
+                            <td>
+                                <a asp-page="#" type="button" class="btn btn-sm btn-outline-secondary pull-right">Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                098765432112345@mil
+                            </td>
+                            <td>
+                                Enabled
+                            </td>
+                            <td>
+                                PIV/Token
+                            </td>
+                            <td>
+                                Test
+                            </td>
+                            <td>
+                                <a asp-page="#" type="button" class="btn btn-sm btn-outline-success pull-right">Enable</a>
+                            </td>
+                            <td>
+                                <a asp-page="#" type="button" class="btn btn-sm btn-outline-secondary pull-right">Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                098765432112345@mil
+                            </td>
+                            <td>
+                                Enabled
+                            </td>
+                            <td>
+                                PIV/Token
+                            </td>
+                            <td>
+                                Development
+                            </td>
+                            <td>
+                                <a asp-page="#" type="button" class="btn btn-sm btn-outline-success pull-right">Enable</a>
+                            </td>
+                            <td>
+                                <a asp-page="#" type="button" class="btn btn-sm btn-outline-secondary pull-right">Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                USERSUP
+                            </td>
+                            <td>
+                                Enabled
+                            </td>
+                            <td>
+                                Password
+                            </td>
+                            <td>
+                                Production
+                            </td>
+                            <td>
+                                <a asp-page="#" type="button" class="btn btn-sm btn-outline-success pull-right">Enable</a>
+                            </td>
+                            <td>
+                                <a asp-page="#" type="button" class="btn btn-sm btn-outline-secondary pull-right">Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                AltToken12345
+                            </td>
+                            <td>
+                                Enabled
+                            </td>
+                            <td>
+                                PIV/Token
+                            </td>
+                            <td>
+                                Production
+                            </td>
+                            <td>
+                                <a asp-page="#" type="button" class="btn btn-sm btn-outline-success pull-right">Enable</a>
+                            </td>
+                            <td>
+                                <a asp-page="#" type="button" class="btn btn-sm btn-outline-secondary pull-right">Details</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

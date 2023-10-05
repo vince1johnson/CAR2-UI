@@ -1,0 +1,281 @@
+﻿@page
+@model CAR2_UI.Pages.saarModel
+@{
+    ViewData["Title"] = "SAAR (2875)";
+}
+
+<div id="web-saar" class="container">
+
+    <!--User UPN-CN-->
+
+    <div class="row">
+        <div class="col-6">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGrid" value="123456789012345@mil" disabled>
+                <label for="floatingInputGrid">UPN</label>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGrid" value="FIRST.M.LAST.123456789012345" disabled>
+                <label for="floatingInputGrid">Common Name</label>
+            </div>
+        </div>
+    </div>
+
+    <!--Page Content-->
+
+    <!--SAAR Header-->
+    <div class="margin-top-20">
+        <h4 class="center">SYSTEM AUTHORIZATION ACCESS REQUEST (SAAR)</h4>
+        <p class="font-weight-bold center">PRIVACY ACT STATEMENT</p>
+    </div>
+    <!--SAAR-->
+    <div id="saar" class="container margin-top-20">
+        <div class="row">
+            <!--PRIVACY ACT-->
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <p class="font-weight-bold">
+                            AUTHORITY:
+                        </p>
+                    </div>
+                    <div class="col-md-9">
+                        <p>
+                            Executive Order 10450, 9397; and Public Law 99-474, the Computer Fraud and Abuse Act.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <p class="font-weight-bold">
+                            PRINCIPAL PURPOSE:
+                        </p>
+                    </div>
+                    <div class="col-md-9">
+                        <p>
+                            To record names, signatures, and other identifiers for the purpose of validating the trustworthiness of individuals requesting
+                            access to Department of Defense (DoD) systems and information. NOTE: Records may be maintained in both electronic
+                            and/or paper form.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <p class="font-weight-bold">
+                            ROUTINE USES:
+                        </p>
+                    </div>
+                    <div class="col-md-9">
+                        <p>
+                            None.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <p class="font-weight-bold">
+                            DISCLOSURE:
+                        </p>
+                    </div>
+                    <div class="col-md-9">
+                        <p>
+                            Disclosure of this information is voluntary; however, failure to provide the requested information may impede, delay or
+                            prevent further processing of this request.
+                        </p>
+                    </div>
+                </div>
+                <!--SYSTEM INFO-->
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-7">
+                            <p class="font-weight-bold">TYPE OF REQUEST</p>
+                        </div>
+                        <div class="col-3 margin-left-neg-20">
+                            <input class="margin-left-neg-50" type="checkbox" id="user_id" name="user_id" value="user_id">
+                            &nbsp;<label for="user_id">USER ID</label>
+                        </div>
+                        <div class="col-2 margin-left-neg-20">
+                            <p>DATE</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="row">
+                                <div class="col-2">
+                                    <input type="checkbox" id="initial" name="initial" value="initial">
+                                    &nbsp;<label for="initial">INITIAL</label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="checkbox" id="modification" name="modification" value="modification">
+                                    &nbsp;<label for="modification">MODIFICATION</label>
+                                </div>
+                                <div class="col-3">
+                                    <input type="checkbox" id="deactivate" name="deactivate" value="deactivate">
+                                    &nbsp;<label for="deactivate">DEACTIVATE</label>
+                                </div>
+                                <div class="col-4 margin-left-neg-50">
+                                    <input class="input-fill" type="text" id="user_id" name="user_id">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 margin-left-neg-50">
+                            <input type="date" id="request_date" name="request_date">
+                        </div>
+                    </div>
+                    <div class="row margin-top-10">
+                        <div class="col-md-7">
+                            <p><strong>SYSTEM NAME</strong> <small>(Platform or Applications)</small></p>
+                        </div>
+                        <div class="col-md-5">
+                            <p><strong>LOCATION</strong> <small>(Physical Location of System)</small></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <input class="input-fill" type="text" id="system_name" name="system_name">
+                        </div>
+                        <div class="col-md-5">
+                            <input class="input-fill" type="text" id="system_location" name="system_location">
+                        </div>
+                    </div>
+                    <hr />
+                    <!--PART ONE-->
+                    <div class="row margin-top-10">
+                        <div class="col-md-12">
+                            <p><strong>PART I</strong> <small> &nbsp;(To be completed by Requestor)</small></p>
+                        </div>
+                    </div>
+                    <!--PART ONE - ROW 1-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>1. &nbsp;<strong>NAME</strong> <small>(Last, First, Middle Initial)</small></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>2. &nbsp;<strong>ORGANIZATION</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="input-fill" type="text" id="requestor_name" name="requestor_name">
+                        </div>
+                        <div class="col-md-6">
+                            <input class="input-fill" type="text" id="requestor_org" name="requestor_org">
+                        </div>
+                    </div>
+                    <!--PART ONE - ROW 2-->
+                    <div class="row margin-top-20">
+                        <div class="col-md-6">
+                            <p>3. &nbsp;<strong>OFFICE SYMBOL/DEPARTMENT</strong></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>4. &nbsp;<strong>PHONE</strong> <small>(DSN or Commercial)</small></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="input-fill" type="text" id="office_symbol" name="office_symbol">
+                        </div>
+                        <div class="col-md-6">
+                            <input class="input-fill" type="text" id="requestor_phone" name="requestor_phone">
+                        </div>
+                    </div>
+                    <!--PART ONE - ROW 3-->
+                    <div class="row margin-top-20">
+                        <div class="col-md-6">
+                            <p>5. &nbsp;<strong>OFFICIAL E-MAIL ADDRESS</strong></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>6. &nbsp;<strong>JOB TITLE AND GRADE/RANK</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="input-fill" type="text" id="requestor_email" name="requestor_email">
+                        </div>
+                        <div class="col-md-6">
+                            <input class="input-fill" type="text" id="requestor_title" name="requestor_title">
+                        </div>
+                    </div>
+                    <!--PART ONE - ROW 4-->
+                    <div class="row margin-top-20">
+                        <div class="col-md-6">
+                            <p>7. &nbsp;<strong>OFFICIAL MAILING ADDRESS</strong></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>8. &nbsp;<strong>CITIZENSHIP</strong></p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>9. &nbsp;<strong>DESIGNATION</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="input-fill" type="text" id="requestor_address" name="requestor_address">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="checkbox" id="citizen_us" name="citizen_us" value="citizen_us">
+                            <label for="citizen_us">US</label>
+                            &nbsp; <input type="checkbox" id="citizen_fn" name="citizen_fn" value="citizen_fn">
+                            <label for="citizen_fn">FN</label>
+                            &nbsp; <input type="checkbox" id="citizen_other" name="citizen_other" value="citizen_other">
+                            <label for="citizen_other">OTHER</label>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="checkbox" id="designation_mil" name="designation_mil" value="designation_mil">
+                            <label for="designation_mil">MIL</label>
+                            &nbsp; <input type="checkbox" id="designation_civ" name="designation_civ" value="designation_civ">
+                            <label for="designation_civ">CIV</label>
+                            &nbsp; <input type="checkbox" id="designation_ctr" name="designation_ctr" value="designation_ctr">
+                            <label for="designation_ctr">CTR</label>
+                        </div>
+                    </div>
+                    <!--PART ONE - ROW 5-->
+                    <div class="row margin-top-20">
+                        <div class="col-md-12">
+                            <p>
+                                10. &nbsp;<strong>IA TRAINING AND AWARENESS CERTIFICATION REQUIREMENTS</strong>
+                                <small>(Complete as required for user or functional level access.)</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="checkbox" id="ia_cert_complete" name="ia_cert_complete" value="ia_cert_complete">
+                            &nbsp; <label for="ia_cert_complete">I have completed Annual Information Awareness Training.</label>
+                            &nbsp; <label class="margin-left-50">DATE:</label><input class="margin-left-25" type="date" id="ia_cert_date" name="ia_cert_date">
+                        </div>
+                    </div>
+                    <!--PART ONE - ROW 6-->
+                    <div class="row margin-top-20">
+                        <div class="col-md-9">
+                            11. &nbsp;<strong>USER SIGNATURE</strong>
+                        </div>
+                        <div class="col-md-3">
+                            12. &nbsp;<strong>DATE</strong>
+                        </div>
+                    </div>
+                    <div class="row margin-top-10">
+                        <div class="col-md-9">
+                            <input class="input-fill" type="text" id="requestor_signature" name="requestor_signature">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="date" id="requestor_signature_date" name="requestor_signature_date">
+                        </div>
+                    </div>
+                    <hr />
+                    <!--PART TWO-->
+                    <div class="row margin-top-10">
+                        <div class="col-md-12">
+                            <p>
+                                <strong>PART II - ENDORSEMENT OF ACCESS BY INFORMATION OWNER, USER SUPERVISOR OR GOVERNMENT SPONSOR</strong>&nbsp;
+                                <small>(If individual is a contractor - provide company name, contract number, and date of contract expiration in Block 16.)</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

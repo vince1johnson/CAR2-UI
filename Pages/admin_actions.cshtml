@@ -1,0 +1,31 @@
+﻿@page
+@model CAR2_UI.Pages.admin_actionsModel
+@{
+    ViewData["Title"] = "CAR Admin Action Items";
+
+}
+<div class="container">
+
+
+
+
+    <header>
+        <div class="row margin-top-10">
+            <div class="col-12">
+                <nav class="navbar static-top">
+                    <h2 class="text-muted">Firstname M. Lastname: &nbsp;<small class="text-red">Admin Actions</small></h2>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="margin-left-20 margin-top-20">
+        <p class="badge bg-danger fs-5">
+            Page currently under construction
+        </p>
+    </div>
+    <a asp-page="admin_supervisor" type="button" class="btn btn-sm btn-outline-success">Supervisor</a>
+    <a asp-page="admin_security_officer" type="button" class="btn btn-sm btn-outline-success">Security Officer</a>
+    <a asp-page="admin_information_owner" type="button" class="btn btn-sm btn-outline-success">Information Owner</a>
+    <a asp-page="admin_isso" type="button" class="btn btn-sm btn-outline-success">ISSO</a>
+</div>

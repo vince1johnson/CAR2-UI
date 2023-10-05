@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qzxKRHgu8VzWOzyiPAcHNzdrwefhDF6AbK6p4xhDGuPC2pOA0y38ARoC76OfcTYUxyysyvQB8v70SWZrHRw8RA==",
+  "success": true,
+  "projectFilePath": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/CAR2-UI.csproj",
+  "expectedPackageFiles": [
+    "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/bootstrap.5.3.0.nupkg.sha512",
+    "/Users/vincejohnson/.nuget/packages/jquery/3.7.0/jquery.3.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

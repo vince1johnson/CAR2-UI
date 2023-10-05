@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/CAR2-UI.props" />
+</Project>

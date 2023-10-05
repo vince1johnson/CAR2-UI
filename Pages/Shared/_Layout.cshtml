@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CAR</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/car-style.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <!--BANNER-->
+        <div id="user_dashboard">
+            <div class="cui_banner">Controlled Unclassified Information (CUI)</div>
+            <div class="banner">
+                <a asp-page="index">
+                    <div class="army_icon"></div>
+                </a>
+                <div class="banner_text">
+                    <div class="site_acronym">
+                        CAR
+                    </div>
+                    <div class="site_title">
+                        <span>Common Access Registration</span>
+                        <span class="car-version">v2.0 R1.0 &nbsp; Updated: 10/05/2023</span>
+                    </div>
+                </div>
+                <div class="army_emblem"></div>
+                <div class="current-user">
+                    <div>Firstname M Lastname</div>
+                    <div>6/7/2023 9:57:52 AM (Last Login)</div>
+                    <div>123456789012345@mil (UPN)</div>
+                    <div>FIRST.M.LAST.123456789012345 (CN)</div>
+                </div>
+            </div>
+        </div>
+            <!--BREADCRUMB-->
+            <div id="banner_breadcrumb">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-dark">
+                            <div class="padding-left-20">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a asp-page="admin_dashboard">Admin</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a asp-page="admin_systems">Admin: My Systems</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a asp-page="user_management">User Management</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a asp-page="user_dashboard">My Dashboard</a>
+                                    </li>
+                                    <li class="breadcrumb-item active">
+                                        <a asp-page="user_profile">My Profile</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a asp-page="user_accounts">My Accounts</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a asp-page="user_roles">My System Roles</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a asp-page="user_documents">My Documents</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <div id="footer">
+        <span class="footer_lt">www.car.mil</span>
+        <span class="unclass_banner">Controlled Unclassified Information (CUI)</span>
+        <span class="footer_rt"><a href="#">508 Compliance</a></span>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

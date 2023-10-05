@@ -1,0 +1,142 @@
+﻿@page
+@model CAR2_UI.Pages.user_managementModel
+@{
+    ViewData["Title"] = "CAR User Management";
+
+}
+
+<div class="container">
+    <header>
+        <div class="row">
+            <div class="col-12 margin-top-10">
+                <nav class="navbar static-top">
+                    <h2 class="text-muted">First M Last: &nbsp;<small class="text-red"> User Management</small></h2>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="jumbotron">
+        <div id="search-org-grp" class="margin-top-20">
+            <div class="input-group">
+                <div class="form-floating col-1">
+                    <select class="form-select" id="floatingSelect">
+                        <option selected>25</option>
+                        <option value="1">50</option>
+                        <option value="2">100</option>
+                    </select>
+                    <label for="floatingSelect">Display:</label>
+                </div>
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect">
+                        <option value="0">Select a Search Type...</option>
+                        <option value="1" selected>Name</option>
+                        <option value="2">EDIPI/UPN</option>
+                        <option value="3">Email</option>
+                    </select>
+                    <label for="floatingSelect">Search By:</label>
+                </div>
+                <div class="form-floating" style="flex: 1;">
+                    <input type="text" class="form-control" id="floatingText" value="Pierce">
+                    <label for="floatingText">Value:</label>
+                </div>
+                <button class="btn btn-outline-secondary" type="button">Search</button>
+                <button class="btn btn-outline-secondary" type="button">Reset</button>
+            </div>
+        </div>
+        <div id="user_doc_table" class="row">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <table class="table table-sm table-hover table-borderless table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Designation
+                                </th>
+                                <th>
+                                    Email
+                                </th>
+                                <th>
+                                    UPN
+                                </th>
+                                <th>
+                                    &nbsp;
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="user_tables">
+                            <tr>
+                                <td>
+                                    FirstName M Pierce
+                                </td>
+                                <td>
+                                    CIV
+                                </td>
+                                <td>
+                                    first.m.pierce1.civ@army.mil
+                                </td>
+                                <td>
+                                    098765432154321@mil
+                                </td>
+                                <td>
+                                    <a asp-page="user_mgmt_detail" type="button" class="btn btn-sm btn-outline-primary">Details</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Hawkeye Pierce
+                                </td>
+                                <td>
+                                    MIL
+                                </td>
+                                <td>
+                                    hawkeye.pierce.mil@4077.mash.mil
+                                </td>
+                                <td>
+                                    123456789012345@mil
+                                </td>
+                                <td>
+                                    <a asp-page="user_mgmt_detail" type="button" class="btn btn-sm btn-outline-primary">Details</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    William Pierce
+                                </td>
+                                <td>
+                                    CTR
+                                </td>
+                                <td>
+                                    william.pierce7.ctr@army.mil
+                                </td>
+                                <td>
+                                    456789012312345@mil
+                                </td>
+                                <td>
+                                    <a asp-page="user_mgmt_detail" type="button" class="btn btn-sm btn-outline-primary">Details</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <nav>
+            <ul class="pagination justify-content-end">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,122 @@
+﻿@page
+@model CAR2_UI.Pages.new_requestModel
+@{
+    ViewData["Title"] = "New 2875 Access Request";
+}
+
+<div id="new_request" class="container">
+
+    <!--USER INFO-->
+
+    <header>
+        <div class="row margin-top-10">
+            <div class="col-12">
+                <nav class="navbar static-top">
+                    <h2 class="text-muted">First M Last: &nbsp;<small> New Access Request</small></h2>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--User UPN-CN-->
+
+    <div class="row">
+        <div class="col-6">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGrid" value="123456789012345@mil" disabled>
+                <label for="floatingInputGrid">UPN</label>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGrid" value="FIRST.M.LAST.123456789012345" disabled>
+                <label for="floatingInputGrid">Common Name</label>
+            </div>
+        </div>
+    </div>
+
+    <!--page content-->
+
+    <div class="jumbotron">
+
+        <div class="margin-top-10">
+            <h4>Online Form 2875 System Authorization Access Request (SAAR)</h4>
+        </div>
+        <div class="profile-format margin-top-20">
+            <!--Row 1-->
+            <div class="row">
+                <div class="col">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInputGrid" value="Army Battalion Company (ABC)" disabled>
+                        <label for="floatingInputGrid">System:</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInputGrid" value="ABC Workforce" disabled>
+                        <label for="floatingInputGrid">Organization Group:</label>
+                    </div>
+                </div>
+            </div>
+
+            <!--Row 2-->
+            <div class="row">
+                <div class="col">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInputGrid" value="ABC AVD Desktop (PIV)" disabled>
+                        <label for="floatingInputGrid">Role:</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                            <option selected>Choose...</option>
+                            <option value="1">Supervisor 01</option>
+                            <option value="2">Supervisor 02</option>
+                            <option value="3">Supervisor 03</option>
+                        </select>
+                        <label class="required" for="floatingSelectGrid">Supervisor/Gov Sponsor:</label>
+                    </div>
+                </div>
+
+                <div class="small margin-top-10 margin-left-10 text-muted">Appointment Type: &nbsp;</div>
+
+                <div class="input-group mb-3 margin-top-10 margin-left-10">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="checked">
+                        <label class="form-check-label" for="inlineRadio1">Permanent</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Temporary</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <span class="pull-right">Exp. Date</span>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="date" disabled>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-floating">
+                            <textarea class="form-control" style="height: 120px"></textarea>
+                            <label class="required" for="floatingInputGrid">Justification:</label>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            </div>
+    <div class="col-12 margin-top-20">
+        <span class="pull-right">
+            <a asp-page="user_dashboard" type="button" class="btn btn-outline-danger position-relative">Cancel</a>
+            <button type="button" class="btn btn-outline-secondary">Reset Request</button>
+            <a asp-page="user_role_submitted" type="button" class="btn btn-success position-relative">Submit for Review</a>
+        </span>
+    </div>
+    </div>
+</div>

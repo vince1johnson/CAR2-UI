@@ -1,0 +1,323 @@
+﻿@page
+@model CAR2_UI.Pages.admin_view_user_docsModel
+@{
+    ViewData["Title"] = "Admin View: User Documents";
+}
+
+<div id="user_documents" class="container">
+
+    <!--USER INFO-->
+
+    <header>
+        <div class="row margin-top-10">
+            <div class="col-12">
+                <nav class="navbar static-top">
+                    <h2 class="text-muted">FirstName M. Pierce:&nbsp;<small class="text-red">User Manager: View User Documents</small></h2>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--User UPN-CN-->
+
+    <div class="row">
+        <div class="col-6">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGrid" value="098765432112345@mil" disabled>
+                <label for="floatingInputGrid">UPN</label>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGrid" value="FIRST.M.LAST.098765432112345" disabled>
+                <label for="floatingInputGrid">Common Name</label>
+            </div>
+        </div>
+    </div>
+
+    <!--Upload New Document button-->
+
+    <div class="row margin-top-20">
+        <div class="col-md-12">
+            <h4>
+                Access Request Supporting Documents
+            </h4>
+        </div>
+    </div>
+    
+    <!--Documents Table-->
+
+    <div id="user_doc_table" class="row">
+        <div class="col-12">
+                <table class="table table-sm table-hover table-borderless table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                Document Title
+                            </th>
+                            <th>
+                                Type
+                            </th>
+                            <th>
+                                Upload Date
+                            </th>
+                            <th>
+                                Completed Date
+                            </th>
+                            <th>
+                                Exp. Date
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="user_docs">
+                        <tr>
+                            <td>
+                                <a href="#">User Cyber Awareness 2022.pdf</a>
+                            </td>
+                            <td>
+                                Annual Cyber Awareness Training
+                            </td>
+                            <td>
+                                09/20/2022
+                            </td>
+                            <td>
+                                09/01/2022
+                            </td>
+                            <td>
+                                09/01/2023
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">User SecurityPlus cert.pdf</a>
+                            </td>
+                            <td>
+                                Security+
+                            </td>
+                            <td>
+                                09/01/2021
+                            </td>
+                            <td>
+                                08/25/2020
+                            </td>
+                            <td>
+                                08/25/2023
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">User IAT CE April 2023.pdf</a>
+                            </td>
+                            <td>
+                                IAT Training CE
+                            </td>
+                            <td>
+                                05/01/2023
+                            </td>
+                            <td>
+                                04/25/2023
+                            </td>
+                            <td>
+                                n/a
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">User AAG VPN Agreement.pdf</a>
+                            </td>
+                            <td>
+                                Enclave Requirement
+                            </td>
+                            <td>
+                                09/25/2022
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                                n/a
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">User AAG AUP.pdf</a>
+                            </td>
+                            <td>
+                                Enclave Requirement
+                            </td>
+                            <td>
+                                09/25/2022
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                                n/a
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">User AR 380-67.pdf</a>
+                            </td>
+                            <td>
+                                Security Officer AR 380-67
+                            </td>
+                            <td>
+                                09/25/2022
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                                n/a
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">User PED training cert.jpg</a>
+                            </td>
+                            <td>
+                                Enclave Requirement
+                            </td>
+                            <td>
+                                09/25/2022
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                                n/a
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">User PII training cert.pdf</a>
+                            </td>
+                            <td>
+                                Enclave Requirement
+                            </td>
+                            <td>
+                                09/25/2022
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                                n/a
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">User Phishing Awareness training cert.pdf</a>
+                            </td>
+                            <td>
+                                Enclave Requirement
+                            </td>
+                            <td>
+                                09/25/2022
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                                n/a
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+    <hr />
+    <div class="row margin-top-50">
+        <div class="col-md-12">
+            <h4>
+                CAR Generated DD Form 2875 - System Authorization Access Requests (SAAR)
+            </h4>
+        </div>
+    </div>
+    <div id="user_doc_table" class="row margin-top-neg-20">
+        <div class="col-12">
+            <div class="jumbotron">
+                <table class="table table-sm table-hover table-borderless table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                System
+                            </th>
+                            <th>
+                                Role
+                            </th>
+                            <th>
+                                Disposition
+                            </th>
+                            <th>
+                                Approval Date
+                            </th>
+                            <th>
+                                &nbsp;
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="user_docs">
+                        <tr>
+                            <td>
+                                ABC
+                            </td>
+                            <td>
+                                <a asp-page="saar">ABC vGFE Desktop.pdf</a>
+                            </td>
+                            <td>
+                                Deactivate
+                            </td>
+                            <td>
+                                10/01/2022
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ABC
+                            </td>
+                            <td>
+                                <a asp-page="saar">ABC Citrix Administrator 2875.pdf</a>
+                            </td>
+                            <td>
+                                Modification
+                            </td>
+                            <td>
+                                10/01/2022
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ABC
+                            </td>
+                            <td>
+                                <a asp-page="saar">ABC vGFE Desktop.pdf</a>
+                            </td>
+                            <td>
+                                Initial
+                            </td>
+                            <td>
+                                05/10/2021
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ABC
+                            </td>
+                            <td>
+                                <a asp-page="saar">ABC Citrix Administrator 2875.pdf</a>
+                            </td>
+                            <td>
+                                Initial
+                            </td>
+                            <td>
+                                07/15/2020
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

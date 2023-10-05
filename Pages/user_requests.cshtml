@@ -1,0 +1,365 @@
+﻿@page
+@model CAR2_UI.Pages.user_requestsModel
+@{
+    ViewData["Title"] = "Track My Requests";
+
+}
+
+<div id="user_role_submitted" class="container">
+
+    <!--USER INFO-->
+
+    <header>
+        <div class="row margin-top-10">
+            <div class="col-12">
+                <nav class="navbar static-top">
+                    <h2 class="text-muted">First M Last: &nbsp;<small> My Access Requests</small></h2>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--User UPN-CN-->
+
+    @*<div class="row">
+        <div class="col-6">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGrid" value="123456789012345@mil" disabled>
+                <label for="floatingInputGrid">UPN</label>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGrid" value="FIRST.M.LAST.123456789012345" disabled>
+                <label for="floatingInputGrid">Common Name</label>
+            </div>
+        </div>
+    </div>*@
+
+    <!--Page Content-->
+
+    <div class="jumbotron">
+       <div>
+            <a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#search-org-grp" role="button" aria-expanded="false" aria-controls="search-org-grp">
+                Toggle Search
+            </a>
+        </div>
+
+        <div id="search-org-grp" class="collapse margin-top-20">
+            <div class="input-group">
+                <div class="form-floating col-1">
+                    <select class="form-select" id="floatingSelect">
+                        <option selected>25</option>
+                        <option value="1">50</option>
+                        <option value="2">100</option>
+                    </select>
+                    <label for="floatingSelect">Display:</label>
+                </div>
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect">
+                        <option value="0">Select a Search Type...</option>
+                        <option value="1">Request ID</option>
+                        <option value="2">System</option>
+                        <option value="3">System Role</option>
+                        <option value="4">Expiration</option>
+                    </select>
+                    <label for="floatingSelect">Search By:</label>
+                </div>
+                <div class="form-floating" style="flex: 1;">
+                    <input type="text" class="form-control" id="floatingText">
+                    <label for="floatingText">Value:</label>
+                </div>
+                <button class="btn btn-outline-secondary" type="button">Search</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#FilterModal">Filter</button>
+                <button class="btn btn-outline-secondary" type="button">Reset</button>
+            </div>
+        </div>
+
+        <div id="user_doc_table" class="row">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <table class="table table-sm table-hover table-borderless table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    System
+                                </th>
+                                <th>
+                                    Request Type
+                                </th>
+                                <th>
+                                    Status
+                                </th>
+                                <th>
+                                    Role
+                                </th>
+                                <th>
+                                    Access Type
+                                </th>
+                                <th>
+                                    Review Step
+                                </th>
+                                <th>
+                                    Action Date
+                                </th>
+                                <th>
+                                    &nbsp;
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="user_docs">
+                            <tr>
+                                <td>
+                                    ABC
+                                </td>
+                                <td>
+                                    Initial
+                                </td>
+                                <td>
+                                    Assigned
+                                </td>
+                                <td>
+                                    ABC AVD Desktop (PIV)
+                                </td>
+                                <td>
+                                    Authorized
+                                </td>
+                                <td>
+                                    Supervisor
+                                </td>
+                                <td>
+                                    07/10/2023
+                                </td>
+                                <td>
+                                    <a asp-page="user_role_submitted" type="button" class="btn btn-sm btn-outline-primary">Details</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ABC
+                                </td>
+                                <td>
+                                    Revocation
+                                </td>
+                                <td>
+                                    Approved
+                                </td>
+                                <td>
+                                    ABC vGFE Desktop (PIV)
+                                </td>
+                                <td>
+                                    Authorized
+                                </td>
+                                <td>
+                                    Complete
+                                </td>
+                                <td>
+                                    05/23/2023
+                                </td>
+                                <td>
+                                    <a asp-page="role_details_revoked" type="button" class="btn btn-sm btn-outline-primary">Details</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ABC
+                                </td>
+                                <td>
+                                    Initial
+                                </td>
+                                <td>
+                                    Approved
+                                </td>
+                                <td>
+                                    ABC vGFE Desktop (PIV)
+                                </td>
+                                <td>
+                                    Authorized
+                                </td>
+                                <td>
+                                    Complete
+                                </td>
+                                <td>
+                                    05/22/2023
+                                </td>
+                                <td>
+                                    <a asp-page="role_details" type="button" class="btn btn-sm btn-outline-primary">Details</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ABC
+                                </td>
+                                <td>
+                                    Initial
+                                </td>
+                                <td>
+                                    Information Requested
+                                </td>
+                                <td>
+                                    ABC System Administrator (SA)
+                                </td>
+                                <td>
+                                    Privileged
+                                </td>
+                                <td>
+                                    Information Owner
+                                </td>
+                                <td>
+                                    04/02/2023
+                                </td>
+                                <td>
+                                    <a asp-page="#" type="button" class="btn btn-sm btn-outline-primary">Details</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+@*Filter Modal*@
+
+<div class="modal fade" id="FilterModal" tabindex="-1" aria-labelledby="FilterModal" aria-hidden="true">
+    <div id="documents_modal" class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="UploadNewDocument">Filter: Track My Requests</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <h4>Access Type</h4>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Select: all/none</label>
+                    </div>
+                    <div class="margin-left-20">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Privileged</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Authorized</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Application System</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Privileged PIV</label>
+                        </div>
+                    </div>
+                <hr />
+                    <h4 class="margin-top-10">Request Type</h4>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Select: all/none</label>
+                    </div>
+
+                    <div class="margin-left-20">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Initial</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Modification</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Deactivation</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Revocation</label>
+                        </div>
+                    </div>
+                <hr />
+                    <h4 class="margin-top-10">Request Status</h4>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Select: all/none</label>
+                    </div>
+
+                    <div class="margin-left-20">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">In Work</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Assigned</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Information Requested</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Approved</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Denied</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Withdrawn</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Suspended</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Abandoned</label>
+                        </div>
+                    </div>
+                <hr />
+                        <h4 class="margin-top-10">Appointment Type</h4>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Select: all/none</label>
+                        </div>
+                        <div class="margin-left-20">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Permanent</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Temporary</label>
+                            </div>
+                        </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="col-12">
+                    <span class="pull-right">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Apply Filter</button>
+
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

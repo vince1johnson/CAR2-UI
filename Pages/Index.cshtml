@@ -1,0 +1,83 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "DoD Disclaimer";
+}
+
+
+<div id="dod_disclaimer" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron text-justify">
+                <h2>DoD Privacy and Ethics Policy</h2>
+                <p class="lead mb-0">
+                    Please read the following DoD Privacy and Ethics Policy concerning CAR website usage. By signing in to the following Systems, you agree to the terms and conditions of use.
+                </p>
+                <h6 class="mt-4">STANDARD MANDATORY DOD NOTICE AND CONSENT</h6>
+                <p>
+                    You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only. By using this IS (which includes any device
+                    attached to this IS), you consent to the following conditions:
+                </p>
+                <ul>
+                    <li>
+                        The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring,
+                        network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+                    </li>
+                    <li>
+                        At any time, the USG may inspect and seize data stored on this IS.
+                    </li>
+                    <li>
+                        Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used
+                        for any USG-authorized purpose.
+                    </li>
+                    <li>
+                        This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+                    </li>
+                    <li>
+                        Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged
+                        communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such
+                        communications and work product are private and confidential. See User Agreement for details.
+                    </li>
+                </ul>
+
+                <h5 class="mt-4">ACKNOWLEDGEMENT OF RESPONSIBILITIES OF RECEIVING AND MAINTAINING PRIVACY ACT DATA</h5>
+
+                <p class="text-uppercase">DATA YOU ARE ABOUT TO ACCESS COULD POTENTIALLY BE PROTECTED BY THE PRIVACY ACT OF 1974. You Must:</p>
+
+                <ul>
+                    <li>Have completed the necessary training with regards to Security Awareness and safeguarding Personally Identifiable Information.</li>
+                    <li>Ensure that data is not posted, stored or available in any way for uncontrolled access on any media.</li>
+                    <li>Ensure that data is protected at all times as required by the Privacy Act of 1974 (5 USC 552a(I)(3)) as amended and other applicable DoD regulatory and statutory authority; data will not be shared with offshore contractors; data from the application, or any information derived from the application, shall not be published, disclosed, released, revealed, shown, sold, rented, leased or loaned to anyone outside of the performance of official duties without prior approval.</li>
+                    <li>Delete or destroy data from downloaded reports upon completion of the requirement for their use on individual projects.</li>
+                    <li>Ensure distribution of data from the CAR application is restricted to those with a need-to-know. In no case shall data be shared with persons or entities that do not provide documented proof of a need-to-know.</li>
+                </ul>
+
+                <h5 class="mt-4">PRIVACY ACT</h5>
+                <p>AUTHORITY: 10 U.S.C. 3013, Secretary of the Army; Department of Defense Directive 8500.1, Information Assurance (IA); DoD Instruction 8500.2, Information Assurance Implementation; AR 25-1, Army Knowledge Management and Information Technology; Army Regulation 25-2, Information Assurance; and E.O. 9397(SSN).</p>
+                <p>PRINCIPAL PURPOSE(S): To register users in order to facilitate electronic communications among DoD personnel and other authorized guest users. This system serves as an Army controlled repository for information needed by DoD personnel necessary for performance of duties and other DoD-related functions. Access is controlled based on individual needs for specific types of information. Statistical data, with all personal identifiers removed, may be used by management for system efficiency, workload calculation, or reporting purposes.</p>
+                <p>ROUTINE USE: In addition to those disclosures generally permitted under 5 U.S.C. 552a(b) of the Privacy Act, these records or information contained therein may specifically be disclosed outside the DoD as a routine use pursuant to 5 U.S.C. 552a(b)(3) as follows: The DoD 'Blanket Routine Uses' set forth at the beginning of the Army's compilation of systems of records notices also apply to this system.</p>
+                <p>DISCLOSURE: Voluntary; however, failure to provide all of the requested information may impede, delay or prevent further processing of the access request.</p>
+                <hr />
+                <div>
+                    <p>
+                        This statement serves to inform you of the purpose for collecting personal information required by Army Analytics Group (AAG) and how it will be used.
+                    </p>
+                    <ul>
+                        <li><strong>AUTHORITY</strong>: 5 U.S.C. 301, Departmental Regulations; Chapter 53, Pay Rates and Systems, Chapter 55, Pay Administration, Chapter 61, Hours of Work and Chapter 63, Leave; Department of Defense Financial Management Regulation (DoDFMR) 7000.14-R Vol. 8, Chapter 5, Leave; E.O. 9397 (SSN), as amended. 5 U.S.C. 7201, Antidiscrimination Policy; 10 U.S.C. 136, Under Secretary of Defense for Personnel and Readiness.</li>
+                        <li><strong>PURPOSE</strong>: Information is collected from individuals to verify the identity of eligible users of AWPS.</li>
+                        <li><strong>ROUTINE USES</strong>:	In addition to those disclosures generally permitted under 5 U.S.C. 552a(b) of the Privacy Act of 1974, as amended, the Department of Defense "Blanket Routine Uses" under 5 U.S.C. 552a(b)(3) set forth at the beginning of the Office of the Secretary of Defense compilation of systems of records notices apply to this collection.</li>
+                        <li><strong>DISCLOSURE</strong>: Voluntary: however, failure to provide the requested information will result in denial of access or application submission.</li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <span class="pull-right" role="group">
+                            <a type="button" class="btn btn-success" asp-page="user_dashboard">Accept</a>
+                            <button type="button" class="btn btn-secondary" onclick="window.open('', '_self', ''); window.close();">Decline</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

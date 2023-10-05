@@ -1,0 +1,206 @@
+﻿@page
+@model CAR2_UI.Pages.profileModel
+@{
+    ViewData["Title"] = "My Profile";
+}
+
+<div id="user_profile" class="container">
+
+    <!--USER INFO-->
+
+    <header>
+        <div class="row margin-top-10">
+            <div class="col-12">
+                <nav class="navbar static-top">
+                    <h2 class="text-muted">First M Last: &nbsp;<small> My Profile Details</small></h2>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--User UPN-CN-->
+
+    <!--<div class="row">
+        <div class="col-6">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGrid" value="123456789012345@mil" disabled>
+                <label for="floatingInputGrid">UPN</label>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGrid" value="FIRST.M.LAST.123456789012345" disabled>
+                <label for="floatingInputGrid">Common Name</label>
+            </div>
+        </div>
+    </div>-->
+
+    <!--User Profile-->
+
+    <div class="profile-format margin-top-20">
+
+        <!--Row 1-->
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid">
+                    <label class="required" for="floatingInputGrid">First Name</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                        <option selected>Choose...</option>
+                        <option value="1">Department of the Army</option>
+                        <option value="2">Department of the Air Force</option>
+                        <option value="3">Department of the Navy</option>
+                        <option value="4">Department of the Marine Corps</option>
+                        <option value="5">Department of the Homeland Security</option>
+                    </select>
+                    <label class="required" for="floatingSelectGrid">Department</label>
+                </div>
+            </div>
+        </div>
+        <!--Row 2-->
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid">
+                    <label for="floatingInputGrid">Middle Name</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid">
+                    <label class="required" for="floatingInputGrid">Organization</label>
+                </div>
+            </div>
+        </div>
+        <!--Row 3-->
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid">
+                    <label class="required" for="floatingInputGrid">Last Name</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid">
+                    <label class="required" for="floatingInputGrid">Job Title</label>
+                </div>
+            </div>
+        </div>
+        <!--Row 4-->
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <input type="tel" class="form-control" id="floatingInputGrid">
+                    <label class="required" for="floatingInputGrid">Phone</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                        <option selected>Choose...</option>
+                        <option value="1">Contractor</option>
+                        <option value="2">Civilian</option>
+                        <option value="3">Military</option>
+                        <option value="4">Other (ECA)</option>
+                    </select>
+                    <label class="required" for="floatingSelectGrid">Designation</label>
+                </div>
+            </div>
+        </div>
+        <!--Row 5-->
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <input type="tel" class="form-control" id="floatingInputGrid">
+                    <label class="required" for="floatingInputGrid">Official Email (.mil)</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                        <option selected>Choose...</option>
+                        <option value="1">CTR</option>
+                        <option value="2">CIV</option>
+                        <option value="3">MIL</option>
+                        <option value="4">ECA</option>
+                    </select>
+                    <label class="required" for="floatingSelectGrid">Persona Type</label>
+                </div>
+            </div>
+        </div>
+        <!--Row 6-->
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <input type="tel" class="form-control" id="floatingInputGrid">
+                    <label for="floatingInputGrid">Alternate Email</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                        <option selected>Choose...</option>
+                        <option value="1">US</option>
+                        <option value="2">FN</option>
+                        <option value="3">Other</option>
+                    </select>
+                    <label class="required" for="floatingSelectGrid">Citizenship</label>
+                </div>
+            </div>
+        </div>
+        <!--Row 7-->
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <input type="tel" class="form-control" id="floatingInputGrid">
+                    <label class="required" for="floatingInputGrid">Physical Address (number, city, state, zip)</label>
+                </div>
+            </div>
+        </div>
+        <div class="margin-top-10 padding-10">
+            <p>
+                <span class="required"></span>&nbsp; Required fields
+                <span class="pull-right">Content of this profile is viewable by all reviewers and included in SAAR-2875 pdf export</span>
+            </p>
+        </div>
+    </div>
+        <div class="row margin-top-10">
+            <div class="col-3">
+                <p class="text-muted center">
+                    Last Updated: 04/30/2023 10:25:00
+                    <br />
+                    by: FirstName M LastName
+                </p>
+            </div>
+            <div class="col-7">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <div class="alert-profile"><strong>Scheduled Maintenance</strong>: Please verify that your Profile details are current.</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-outline-success pull-right margin-right-15">Update / Save</button>
+            </div>
+        </div>
+    <!--Additional Info-->
+    <div class="row padding-10">
+        <div class="col-12">
+            <div class="margin-top-10">
+                <div class="btn-toolbar pull-left" role="toolbar">
+                    <div class="btn-group me-2" role="group">
+                        <a asp-page="user_audit_profile" type="button" class="btn btn-outline-secondary">Audit My User Profile</a>
+                    </div>
+                    <div class="btn-group me-2" role="group">
+                        <a asp-page="user_profile_extended" type="button" class="btn btn-outline-secondary">Extended Profile Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="margin-top-10"></div>
+</div>

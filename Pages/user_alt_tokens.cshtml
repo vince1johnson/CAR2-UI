@@ -1,0 +1,99 @@
+﻿@page
+@model CAR2_UI.Pages.user_alt_tokensModel
+@{
+    ViewData["Title"] = "My Alt-Tokens";
+}
+
+<div id="user_accounts" class="container">
+
+    <!--USER INFO-->
+
+    <header>
+        <div class="row margin-top-10">
+            <div class="col-12">
+                <nav class="navbar static-top">
+                    <h2 class="text-muted">First M Last: &nbsp;<small> My Alt-Tokens</small></h2>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--User UPN-CN-->
+
+    <div class="row">
+        <div class="col-6">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGrid" value="123456789012345@mil" disabled>
+                <label for="floatingInputGrid">UPN</label>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGrid" value="FIRST.M.LAST.123456789012345" disabled>
+                <label for="floatingInputGrid">Common Name</label>
+            </div>
+        </div>
+    </div>
+
+    <!--Page Content-->
+
+    <div class="row margin-top-20">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-text">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect">
+                                <optgroup label="Alt-Tokens">
+                                    <option value="0">Choose...</option>
+                                    <option value="1">Alt-Token 1234567</option>
+                                    <option value="2" selected>Alt-Token 7891011</option>
+                                </optgroup>
+                            </select>
+                            <label for="floatingSelect">Select an Alt-Token...</label>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="margin-top-20">Selected Alt-Token Options</h4>
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <a asp-page="#" type="button" class="btn btn-outline-primary">Associate to Account</a>
+                    <a asp-page="#" type="button" class="btn btn-outline-primary">Replace Alt-Token</a>
+                    <a asp-page="#" type="button" class="btn btn-outline-primary">Audit Alt-Token History</a>
+                </div>
+                <div class="margin-top-10">
+                    <a asp-page="#" type="button" class="btn btn-outline-success">Enable Token Account</a>
+                    <a asp-page="#" type="button" class="btn btn-outline-danger pull-right">Delete this Alt-Token</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card margin-left-20">
+                <p class="card-text">
+                    <strong>Selected Alt-Token:</strong> 7891011
+                    <br />
+                    <strong>Status:</strong> Account Enabled
+                    <br />
+                    <strong>Authentication Type:</strong> Token
+                    <br />
+                    <strong>Status:</strong> Account Successfully Processed
+                    <br />
+                    <strong>Domain(s):</strong> Production
+                    <br />
+                    <strong>Associated Roles:</strong>
+                    <ul class="margin-top-neg-15">
+                        <li>
+                            ABC: ABC Role 004
+                        </li>
+                        <li>
+                            ABC: ABC Role 005
+                        </li>
+                        <li>
+                            ABC: ABC Role 006
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+

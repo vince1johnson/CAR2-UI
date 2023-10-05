@@ -1,0 +1,408 @@
+﻿@page
+@model CAR2_UI.Pages.admin_information_ownerModel
+@{
+    ViewData["Title"] = "CAR Information Owner Review";
+
+}
+
+<div class="container">
+    <header>
+        <div class="row margin-top-10">
+            <div class="col-12">
+                <nav class="navbar static-top">
+                    <h2 class="text-muted">Benjamin F. Pierce &nbsp;<small class="text-red">SAAR Information Owner Review</small></h2>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--User UPN-CN-->
+    <div class="row">
+        <div class="col-2">
+            <div class="margin-top-5">
+                <button type="button" class="btn btn-lg btn-outline-secondary margin-top-5" data-bs-toggle="modal" data-bs-target="#view-user-profile">View User Profile</button>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGrid" value="098765432112345@mil" disabled>
+                <label for="floatingInputGrid">UPN</label>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGrid" value="BENJAMIN.F.PIERCE.098765432112345" disabled>
+                <label for="floatingInputGrid">Common Name</label>
+            </div>
+        </div>
+    </div>
+    <div id="role_requested" class="form-noborder margin-top-20">
+        <!--Row 1-->
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control fw-bold" id="floatingInputGrid" value="ABC AVD Desktop (PIV)" disabled>
+                    <label for="floatingInputGrid">Role Requested</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control fw-bold" id="floatingInputGrid" value="Assigned: Information Owner" disabled>
+                    <label for="floatingInputGrid">Review Status</label>
+                </div>
+            </div>
+        </div>
+        <!--Row 2-->
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid" value="ABC Workforce" disabled>
+                    <label for="floatingInputGrid">Org Group</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid" value="05/22/2023 08:15:00" disabled>
+                    <label for="floatingInputGrid">Date/Time Requested</label>
+                </div>
+            </div>
+        </div>
+        <!--Row 3-->
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid" value="Army Battalion Company (ABC)" disabled>
+                    <label for="floatingInputGrid">System</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid" value="UPN: 098765432112345@mil" disabled>
+                    <label for="floatingInputGrid">Account</label>
+                </div>
+            </div>
+        </div>
+        <!--Row 4-->
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid" value="Token (PIV)" disabled>
+                    <label for="floatingInputGrid">Authorization Type</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid" value="ADP-III" disabled>
+                    <label for="floatingInputGrid">Automated Data Processing Level</label>
+                </div>
+            </div>
+        </div>
+        <!--Row 5-->
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <div class="form-control input-group mb-3 margin-top-10 margin-left-10 border-0" id="floatingInputGrid">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="checked">
+                            <label class="form-check-label" for="inlineRadio1">Permanent</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Temporary</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <span class="pull-right">Exp. Date</span>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="date" disabled>
+                        </div>
+                    </div>
+                    <label for="floatingInputGrid" class="required">Appointment Type:</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid" value="Unclassified Information" disabled>
+                    <label for="floatingInputGrid">Role Provides Access to</label>
+                </div>
+            </div>
+        </div>
+        <!--Row 6-->
+        <div class="row">
+            <div class="col">
+                <div class="form-floating">
+                    <input type="text" class="form-control border-0" id="floatingInputGrid">
+                    <textarea class="form-control padding-left-10 margin-top-neg-30 word-wrap" style="height: 120px">Support ABC Mission of making CAR an awesome app that makes me smile every day.  This sample justification is testing word-wrapping on the Role Details page.  Hopefully it looks good and wont take away from the intended awesomeness of this page.</textarea>
+                    <label for="floatingInputGrid" class="required">Justification</label>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container margin-top-20">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="card-222820">
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link collapsed fw-bold" data-bs-toggle="collapse" data-parent="#card-222820" href="#io-review">Information Owner Review</a>
+                        </div>
+                        <div id="io-review" class="collapse.show">
+                            <div class="card-body">
+                                <div class="col margin-top-10">
+                                    <div class="form-floating">
+                                        <div class="form-check">
+                                            <input class="form-check-input " type="checkbox" value="" id="flexCheck">
+                                            <label class="form-check-label fw-bolder" for="flexCheck">
+                                                I have reviewed this request for access and do affirm that the requested access is needed during the execution of their assigned duties.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="margin-top-20 margin-bottom-10 pull-right">
+                                    <a asp-page="admin_security_officer" type="button" class="btn btn-outline-secondary">Return as Incomplete</a>
+                                    <a asp-page="admin_dashboard" type="button" class="btn btn-outline-danger">Deny</a>
+                                    <a asp-page="admin_isso" type="button" class="btn btn-outline-success">Approve and Send Forward</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link collapsed" data-bs-toggle="collapse" data-parent="#card-222820" href="#so-review">Security Officer Review</a>
+                        </div>
+                        <div id="so-review" class="collapse">
+                            <div class="card-body">
+                                <div class="row margin-top-neg-10">
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInputGrid" value="Secret" disabled>
+                                            <label for="floatingInputGrid" class="">Clearance Level:</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInputGrid" value="Secret Type" disabled>
+                                            <label for="floatingInputGrid" class="">CE Type:</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-top-5">
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInputGrid" value="Secret Software Developer" disabled>
+                                            <label for="floatingInputGrid" class="">Investigation Type:</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInputGrid" value="Complete" disabled>
+                                            <label for="floatingInputGrid" class="">Investigation Status:</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-top-5">
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInputGrid" value="02/06/2006 09:22:47" disabled>
+                                            <label for="floatingInputGrid" class="">Investigation Open Date:</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInputGrid" value="09/22/2019 15:06:05" disabled>
+                                            <label for="floatingInputGrid" class="">Investigation Closed Date:</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-top-5">
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <div class="form-control input-group match-disabled" id="floatingInputGrid">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="option1" checked="checked" disabled>
+                                                    <label class="form-check-label" for="inlineRadio3">Not Enrolled</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="option2" disabled>
+                                                    <label class="form-check-label" for="inlineRadio4">Enrolled</label>
+                                                </div>
+                                            </div>
+                                            <label for="floatingInputGrid" class="">Enrolled in Continuous Evaluation (CE):</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInputGrid" value="MAJ Margaret Houlihan 04/12/2023 11:54:32" disabled>
+                                            <label for="floatingInputGrid" class="">Signed by:</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-bs-toggle="collapse" data-parent="#card-222820" href="#sup-review">Supervisor Review</a>
+                        </div>
+                        <div id="sup-review" class="collapse">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInputGrid" value="4077th M*A*S*H" disabled>
+                                            <label for="floatingInputGrid" class="">Contract Company Name:</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInputGrid" value="987654321ABC123" disabled>
+                                            <label for="floatingInputGrid" class="">Contract Number:</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margin-top-5">
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInputGrid" value="05/05/2025" disabled>
+                                            <label for="floatingInputGrid" class="">Contract Expiration:</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInputGrid" value="Col Sherman T. Potter 04/10/2023 08:45:22" disabled>
+                                            <label for="floatingInputGrid" class="">Signed by:</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margin-bottom-20"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--User Profile Modal-->
+    <div class="modal fade" id="view-user-profile" tabindex="-1" aria-labelledby="view-user-profile" aria-hidden="true">
+        <div id="documents_modal" class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="UploadNewDocument">User Profile Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="profile-format margin-top-20">
+                        <!--Row 1-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="floatingInputGrid" value="Benjamin" disabled>
+                                    <label class="" for="floatingInputGrid">First Name</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="floatingInputGrid" value="Department of the Army" disabled>
+                                    <label class="" for="floatingInputGrid">Department</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Row 2-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="floatingInputGrid" value="Franklin" disabled>
+                                    <label class="" for="floatingInputGrid">Middle Name</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="floatingInputGrid" value="4077th M*A*S*H" disabled>
+                                    <label class="" for="floatingInputGrid">Organization</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Row 3-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="floatingInputGrid" value="Pierce" disabled>
+                                    <label class="" for="floatingInputGrid">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="floatingInputGrid" value="Captain O-3" disabled>
+                                    <label class="" for="floatingInputGrid">Job Title</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Row 4-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="floatingInputGrid" value="321-456-4077" disabled>
+                                    <label class="" for="floatingInputGrid">Phone</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="floatingInputGrid" value="Military" disabled>
+                                    <label class="" for="floatingInputGrid">Designation</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Row 5-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="floatingInputGrid" value="benjamin.f.pierce.mil@mash.army.mil" disabled>
+                                    <label class="" for="floatingInputGrid">Official Email (.mil)</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="floatingInputGrid" value="MIL" disabled>
+                                    <label class="" for="floatingInputGrid">Persona Type</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Row 6-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="floatingInputGrid" value="hawkeye4077@gmail.com" disabled>
+                                    <label class="" for="floatingInputGrid">Alternate Email</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="floatingInputGrid" value="US" disabled>
+                                    <label class="" for="floatingInputGrid">Citizenship</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Row 7-->
+                        <div class="margin-top-10">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="floatingInputGrid" value="78910 Main Street, HomeTown, CA 09876" disabled>
+                                        <label class="" for="floatingInputGrid">Physical Address (number, city, state, zip)</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="col-12">
+                        <span class="pull-right">
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

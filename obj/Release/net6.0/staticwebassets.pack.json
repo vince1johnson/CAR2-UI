@@ -1,0 +1,513 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap.css",
+      "PackagePath": "staticwebassets/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/js/bootstrap.js",
+      "PackagePath": "staticwebassets/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/obj/Release/net6.0/scopedcss/projectbundle/CAR2-UI.bundle.scp.css",
+      "PackagePath": "staticwebassets/CAR2-UI.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/css/car-style.css",
+      "PackagePath": "staticwebassets/css/car-style.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/img/.DS_Store",
+      "PackagePath": "staticwebassets/img/.DS_Store"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/img/army_icon_2023.png",
+      "PackagePath": "staticwebassets/img/army_icon_2023.png"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/img/army_logo.png",
+      "PackagePath": "staticwebassets/img/army_logo.png"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/img/banner_bkgnd.jpg",
+      "PackagePath": "staticwebassets/img/banner_bkgnd.jpg"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/img/banner_bkgnd.png",
+      "PackagePath": "staticwebassets/img/banner_bkgnd.png"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/img/car_card_dark_camo.png",
+      "PackagePath": "staticwebassets/img/car_card_dark_camo.png"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/img/car_card_dark_camo2.png",
+      "PackagePath": "staticwebassets/img/car_card_dark_camo2.png"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/img/doa_emblem.png",
+      "PackagePath": "staticwebassets/img/doa_emblem.png"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/img/icon_accounts.png",
+      "PackagePath": "staticwebassets/img/icon_accounts.png"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/img/icon_document.png",
+      "PackagePath": "staticwebassets/img/icon_document.png"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/img/icon_new.png",
+      "PackagePath": "staticwebassets/img/icon_new.png"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/img/icon_new_dark.png",
+      "PackagePath": "staticwebassets/img/icon_new_dark.png"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/img/icon_profile.png",
+      "PackagePath": "staticwebassets/img/icon_profile.png"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/img/icon_roles.png",
+      "PackagePath": "staticwebassets/img/icon_roles.png"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/img/icon_success.png",
+      "PackagePath": "staticwebassets/img/icon_success.png"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/img/nav_bar.png",
+      "PackagePath": "staticwebassets/img/nav_bar.png"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Release/net6.0/staticwebassets/msbuild.CAR2-UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Release/net6.0/staticwebassets/msbuild.build.CAR2-UI.props",
+      "PackagePath": "build\\CAR2-UI.props"
+    },
+    {
+      "Id": "obj/Release/net6.0/staticwebassets/msbuild.buildMultiTargeting.CAR2-UI.props",
+      "PackagePath": "buildMultiTargeting\\CAR2-UI.props"
+    },
+    {
+      "Id": "obj/Release/net6.0/staticwebassets/msbuild.buildTransitive.CAR2-UI.props",
+      "PackagePath": "buildTransitive\\CAR2-UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

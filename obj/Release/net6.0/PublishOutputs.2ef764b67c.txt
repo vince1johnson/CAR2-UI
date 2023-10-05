@@ -1,0 +1,7 @@
+/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/obj/Release/net6.0/PubTmp/Out/CAR2-UI
+/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/obj/Release/net6.0/PubTmp/Out/appsettings.Development.json
+/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/obj/Release/net6.0/PubTmp/Out/appsettings.json
+/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/obj/Release/net6.0/PubTmp/Out/CAR2-UI.dll
+/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/obj/Release/net6.0/PubTmp/Out/CAR2-UI.deps.json
+/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/obj/Release/net6.0/PubTmp/Out/CAR2-UI.runtimeconfig.json
+/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/obj/Release/net6.0/PubTmp/Out/CAR2-UI.pdb

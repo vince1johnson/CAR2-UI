@@ -1,0 +1,145 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CAR2_UI
+build_property.RootNamespace = CAR2_UI
+build_property.ProjectDir = /Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/vincejohnson/Projects/CAR2-UI/CAR2-UI
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/admin_actions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvYWRtaW5fYWN0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/admin_dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvYWRtaW5fZGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/admin_information_owner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvYWRtaW5faW5mb3JtYXRpb25fb3duZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/admin_isso.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvYWRtaW5faXNzby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/admin_security_officer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvYWRtaW5fc2VjdXJpdHlfb2ZmaWNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/admin_supervisor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvYWRtaW5fc3VwZXJ2aXNvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/admin_systems.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvYWRtaW5fc3lzdGVtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/admin_view_user_docs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvYWRtaW5fdmlld191c2VyX2RvY3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/new_request.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvbmV3X3JlcXVlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/role_details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvcm9sZV9kZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/role_details_revoked.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvcm9sZV9kZXRhaWxzX3Jldm9rZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/saar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvc2Fhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/system_maint_request.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvc3lzdGVtX21haW50X3JlcXVlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/user_accounts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdXNlcl9hY2NvdW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/user_alt_tokens.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdXNlcl9hbHRfdG9rZW5zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/user_audit_profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdXNlcl9hdWRpdF9wcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/user_dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdXNlcl9kYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/user_documents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdXNlcl9kb2N1bWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/user_management.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdXNlcl9tYW5hZ2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/user_mgmt_detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdXNlcl9tZ210X2RldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/user_profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdXNlcl9wcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/user_profile_extended.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdXNlcl9wcm9maWxlX2V4dGVuZGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/user_requests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdXNlcl9yZXF1ZXN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/user_roles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdXNlcl9yb2xlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/user_role_submitted.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdXNlcl9yb2xlX3N1Ym1pdHRlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/vincejohnson/Projects/CAR2-UI/CAR2-UI/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-6k0ezhqose

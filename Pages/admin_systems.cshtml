@@ -1,0 +1,995 @@
+﻿@page
+@model CAR2_UI.Pages.admin_systemsModel
+@{
+    ViewData["Title"] = "CAR - Tenant System Details";
+}
+
+<div id="admin_systems" class="container">
+
+    <!--USER INFO-->
+
+    <header>
+        <div class="row">
+            <div class="col-12 margin-top-10">
+                <nav class="navbar static-top">
+                    <h2 class="text-muted">First M Last: &nbsp;<small class="text-red"> My Tenant Systems Details</small></h2>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--Page Content-->
+
+    <div class="row margin-top-10">
+        <div class="col-6">
+            <div class="card">
+                <h4>Select a System...</h4>
+                <div class="card-body">
+                    <div class="card-text">
+                        <select class="form-select">
+                            <option value="0">Select...</option>
+                            <option value="1" selected>ABC1 Tenant System</option>
+                            <option value="2">ABC2 Tenant System</option>
+                            <option value="3">ABC3 Tenant System</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card margin-left-10">
+                <p class="card-text">
+                    <strong>Selected Tenant System:</strong> ABC1 Tenant System
+                    <br />
+                    <strong>Selected Tenant System Abbreviation:</strong> ABC1TS
+                    <br />
+                    <strong>Status:</strong> Active
+                    <br />
+                    <strong>Last Update:</strong> 05/25/2023 14:55:30
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h4 class="margin-top-20">Selected Tenant System Options</h4>
+        <div class="">
+            <a asp-page="#" type="button" class="btn btn-outline-secondary">Full Summary Export</a>
+            <a asp-page="#" type="button" class="btn btn-outline-secondary">Roles Only Export</a>
+            <a asp-page="#" type="button" class="btn btn-outline-secondary">IA Reviewers Export</a>
+            <a asp-page="system_maint_request" type="button" class="btn btn-outline-success margin-left-20">System Maintenance Request</a>
+        </div>
+    </div>
+
+   <!--System Info TABS-->
+
+<div class="margin-top-20">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="details-tab" data-bs-toggle="tab" data-bs-target="#details" type="button" role="tab" aria-controls="details" aria-selected="true">Details</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="org-grp-tab" data-bs-toggle="tab" data-bs-target="#org-grp" type="button" role="tab" aria-controls="org-grp" aria-selected="true">Organizational Groups</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ad-grp-tab" data-bs-toggle="tab" data-bs-target="#ad-grp" type="button" role="tab" aria-controls="ad-grp" aria-selected="true">AD Groups</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="sys-roles-tab" data-bs-toggle="tab" data-bs-target="#sys-roles" type="button" role="tab" aria-controls="sys-roles" aria-selected="true">System Roles</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="routes-tab" data-bs-toggle="tab" data-bs-target="#routes" type="button" role="tab" aria-controls="routes" aria-selected="true">Approval Routes</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="reviewers-tab" data-bs-toggle="tab" data-bs-target="#reviewers" type="button" role="tab" aria-controls="reviewers" aria-selected="true">IA Reviewers</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="history-tab" data-bs-toggle="tab" data-bs-target="#history" type="button" role="tab" aria-controls="history" aria-selected="true">History</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="comments-tab" data-bs-toggle="tab" data-bs-target="#comments" type="button" role="tab" aria-controls="comments" aria-selected="true">Comments</button>
+        </li>
+    </ul>
+    <div class="tab-content margin-top-20" id="myTabContent">
+        <!--Details-->
+        <div class="tab-pane fade show active" id="details" role="tabpanel">
+            <div class="form-floating margin-top-10">
+                <div id="" class="form-noborder margin-top-20">
+
+                    <!--Row 2-->
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputGrid" value="Army ABC Component" disabled>
+                                <label for="floatingInputGrid">Component/Proponent Name:</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputGrid" value="AABCC" disabled>
+                                <label for="floatingInputGrid">Component/Proponent Abbreviation:</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Row 3-->
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputGrid" value="ABC Sub-Org" disabled>
+                                <label for="floatingInputGrid">Sub-Organization Name:</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputGrid" value="ABCSO" disabled>
+                                <label for="floatingInputGrid">Sub-Organization Abbreviation:</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Row 1-->
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control fw-bold" id="floatingInputGrid" value="ABC1 Tenant System" disabled>
+                                <label for="floatingInputGrid">Information System Name:</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control fw-bold" id="floatingInputGrid" value="ABC1TS" disabled>
+                                <label for="floatingInputGrid">Information System Abbreviation:</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Row 4-->
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputGrid" value="123 Pentagon Lane, Go Army, USA 12345" disabled>
+                                <label for="floatingInputGrid">System Location (displayed on 2875):</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputGrid" value="AABCC-ABCSO-ABC1TS" disabled>
+                                <label for="floatingInputGrid">Active Directory Unique Prefix:</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Row 5-->
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInputGrid" value="ABC is the first three letters of the alphabet, and a sample system intended to fill in these demo fields without displaying any real information." disabled>
+                                <label for="floatingInputGrid">System Description:</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Org Group-->
+        <div class="tab-pane fade" id="org-grp" role="tabpanel">
+            <div id="search-org-grp" class="collapse margin-top-20">
+                <div id="search-org-grp" class="input-group">
+                    <div class="form-floating col-1">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>25</option>
+                            <option value="1">50</option>
+                            <option value="2">100</option>
+                        </select>
+                        <label for="floatingSelect">Display:</label>
+                    </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option value="0">Select a Search Type...</option>
+                            <option value="1">Org Group Name</option>
+                            <option value="2">Alternate Name</option>
+                            <option value="3">Used for System Management</option>
+                            <option value="4">Display in Request</option>
+                            <option value="5">Status</option>
+                        </select>
+                        <label for="floatingSelect">Search By:</label>
+                    </div>
+                    <div class="form-floating" style="flex: 1;">
+                        <input type="text" class="form-control" id="floatingText">
+                        <label for="floatingText">Value:</label>
+                    </div>
+                    <button class="btn btn-outline-secondary" type="button">Search</button>
+                    <button class="btn btn-outline-secondary" type="button">Reset</button>
+                </div>
+            </div>
+
+            <div class="form-floating margin-top-10">
+                <div id="sys_org_grp_table" class="row margin-top-neg-20">
+                    <div class="col-12">
+                        <div class="jumbotron">
+                            <table class="table table-sm table-hover table-borderless table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Org Group Name
+                                        </th>
+                                        <th>
+                                            Alternate Name
+                                        </th>
+                                        <th>
+                                            Used for System Management
+                                        </th>
+                                        <th>
+                                            Display in Request
+                                        </th>
+                                        <th>
+                                            Status
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="user_tables">
+                                    <tr>
+                                        <td>
+                                            ABC1 System Admins
+                                        </td>
+                                        <td>
+                                            ABC1-SA
+                                        </td>
+                                        <td>
+                                            Yes
+                                        </td>
+                                        <td>
+                                            Yes
+                                        </td>
+                                        <td>
+                                            Active
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            ABC1 Auth Users
+                                        </td>
+                                        <td>
+                                            ABC1-AU
+                                        </td>
+                                        <td>
+                                            No
+                                        </td>
+                                        <td>
+                                            Yes
+                                        </td>
+                                        <td>
+                                            Active
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            ABC1 Defunct roles
+                                        </td>
+                                        <td>
+                                            ABC1-BAD
+                                        </td>
+                                        <td>
+                                            No
+                                        </td>
+                                        <td>
+                                            No
+                                        </td>
+                                        <td>
+                                            Disabled
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a class="btn btn-outline-secondary pull-right" data-bs-toggle="collapse" href="#search-org-grp" role="button" aria-expanded="false" aria-controls="search-org-grp">
+                    Search Org Groups
+                </a>
+            </div>
+        </div>
+        <!--AD Groups-->
+        <div class="tab-pane fade" id="ad-grp" role="tabpanel">
+            <div class="form-floating margin-top-10">
+                <div id="search-ad-grp" class="collapse margin-top-20">
+                    <div id="search-ad-grp" class="input-group">
+                        <div class="form-floating col-1">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>25</option>
+                                <option value="1">50</option>
+                                <option value="2">100</option>
+                            </select>
+                            <label for="floatingSelect">Display:</label>
+                        </div>
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option value="0">Select a Search Type...</option>
+                                <option value="1">AD Group Name</option>
+                                <option value="2">Domain</option>
+                            </select>
+                            <label for="floatingSelect">Search By:</label>
+                        </div>
+                        <div class="form-floating" style="flex: 1;">
+                            <input type="text" class="form-control" id="floatingText">
+                            <label for="floatingText">Value:</label>
+                        </div>
+                        <button class="btn btn-outline-secondary" type="button">Search</button>
+                        <button class="btn btn-outline-secondary" type="button">Reset</button>
+                    </div>
+                </div>
+                <div class="form-floating margin-top-10">
+                    <div id="sys_org_grp_table" class="row margin-top-neg-20">
+                        <div class="col-12">
+                            <div class="jumbotron">
+                                <table class="table table-sm table-hover table-borderless table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                AD Group Name
+                                            </th>
+                                            <th>
+                                                Domain
+                                            </th>
+                                            <th>
+                                                Last Updated By
+                                            </th>
+                                            <th>
+                                                Last Update
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="user_tables">
+                                        <tr>
+                                            <td>
+                                                AABCC-ABCSO-ABC1TS-ABC_Group_01
+                                            </td>
+                                            <td>
+                                                Prod, Test, Dev
+                                            </td>
+                                            <td>
+                                                CAR Admin 1234
+                                            </td>
+                                            <td>
+                                                05/15/2023 09:34:55
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                AABCC-ABCSO-ABC1TS-ABC_Group_02
+                                            </td>
+                                            <td>
+                                                Production
+                                            </td>
+                                            <td>
+                                                CAR Admin 2345
+                                            </td>
+                                            <td>
+                                                06/17/2023 12:38:23
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                AABCC-ABCSO-ABC1TS-ABC_Group_03
+                                            </td>
+                                            <td>
+                                                Test, Dev
+                                            </td>
+                                            <td>
+                                                CAR Admin 1234
+                                            </td>
+                                            <td>
+                                                03/22/2023 11:14:05
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                AABCC-ABCSO-ABC1TS-ABC_Group_04
+                                            </td>
+                                            <td>
+                                                Test, Dev
+                                            </td>
+                                            <td>
+                                                CAR Admin 1234
+                                            </td>
+                                            <td>
+                                                02/01/2023 16:22:45
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                AABCC-ABCSO-ABC1TS-ABC_AVD1
+                                            </td>
+                                            <td>
+                                                Prod
+                                            </td>
+                                            <td>
+                                                CAR Admin 2345
+                                            </td>
+                                            <td>
+                                                12/13/2022 10:15:05
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a class="btn btn-outline-secondary pull-right" data-bs-toggle="collapse" href="#search-ad-grp" role="button" aria-expanded="false" aria-controls="search-ad-grp">
+                        Search AD Groups
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--System Roles-->
+        <div class="tab-pane fade" id="sys-roles" role="tabpanel">
+            <div class="form-floating margin-top-10">
+                <div class="form-floating margin-top-10">
+                    <div id="search-sys-roles" class="collapse margin-top-20">
+                        <div id="search-sys-roles" class="input-group">
+                            <div class="form-floating col-1">
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <option selected>25</option>
+                                    <option value="1">50</option>
+                                    <option value="2">100</option>
+                                </select>
+                                <label for="floatingSelect">Display:</label>
+                            </div>
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <option value="0">Select a Search Type...</option>
+                                    <option value="1">Role Name</option>
+                                    <option value="2">Org. Group</option>
+                                    <option value="3">Acc. Type</option>
+                                    <option value="4">Auth. Type</option>
+                                    <option value="5">Persona</option>
+                                    <option value="6">AD Group</option>
+                                    <option value="7">Status</option>
+                                    <option value="8">Deprecated</option>
+                                </select>
+                                <label for="floatingSelect">Search By:</label>
+                            </div>
+                            <div class="form-floating" style="flex: 1;">
+                                <input type="text" class="form-control" id="floatingText">
+                                <label for="floatingText">Value:</label>
+                            </div>
+                            <button class="btn btn-outline-secondary" type="button">Search</button>
+                            <button class="btn btn-outline-secondary" type="button">Reset</button>
+                        </div>
+                    </div>
+                    <div class="form-floating margin-top-10">
+                        <div id="sys_sys_roles_table" class="row margin-top-neg-20">
+                            <div class="col-12">
+                                <div class="jumbotron">
+                                    <table class="table table-sm table-hover table-borderless table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Role Name
+                                                </th>
+                                                <th>
+                                                    Domain
+                                                </th>
+                                                <th>
+                                                    Org. Group
+                                                </th>
+                                                <th>
+                                                    Acc. Type
+                                                </th>
+                                                <th>
+                                                    Auth. Type
+                                                </th>
+                                                <th>
+                                                    Persona
+                                                </th>
+                                                <th>
+                                                    AD Group(s)
+                                                </th>
+                                                <th>
+                                                    Status
+                                                </th>
+                                                <th>
+                                                    Deprecated
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="user_tables">
+                                            <tr>
+                                                <td>
+                                                    ABC System Administrator
+                                                </td>
+                                                <td>
+                                                    Prod
+                                                </td>
+                                                <td>
+                                                    ABC1 System Admins
+                                                </td>
+                                                <td>
+                                                    Privileged
+                                                </td>
+                                                <td>
+                                                    Password
+                                                </td>
+                                                <td>
+                                                    SA
+                                                </td>
+                                                <td>
+                                                    AABCC-ABCSO-ABC1TS-ABC_Group_01 <br /> AABCC-ABCSO-ABC1TS-ABC_Group_02
+                                                </td>
+                                                <td>
+                                                    Enabled
+                                                </td>
+                                                <td>
+                                                    No
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    ABC Domain Administrator
+                                                </td>
+                                                <td>
+                                                    Prod
+                                                </td>
+                                                <td>
+                                                    ABC1 System Admins
+                                                </td>
+                                                <td>
+                                                    Privileged
+                                                </td>
+                                                <td>
+                                                    Password
+                                                </td>
+                                                <td>
+                                                    DA
+                                                </td>
+                                                <td>
+                                                    AABCC-ABCSO-ABC1TS-ABC_Group_02 <br /> AABCC-ABCSO-ABC1TS-ABC_Group_03
+                                                </td>
+                                                <td>
+                                                    Enabled
+                                                </td>
+                                                <td>
+                                                    No
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    ABC Application User
+                                                </td>
+                                                <td>
+                                                    Dev, Test
+                                                </td>
+                                                <td>
+                                                    ABC1 Auth Users
+                                                </td>
+                                                <td>
+                                                    Authorized
+                                                </td>
+                                                <td>
+                                                    Token
+                                                </td>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                                <td>
+                                                    AABCC-ABCSO-ABC1TS-ABC_Group_04
+                                                </td>
+                                                <td>
+                                                    Enabled
+                                                </td>
+                                                <td>
+                                                    No
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    ABC AVD Desktop (PIV)
+                                                </td>
+                                                <td>
+                                                    Prod
+                                                </td>
+                                                <td>
+                                                    ABC1 Authorized Users
+                                                </td>
+                                                <td>
+                                                    Authorized
+                                                </td>
+                                                <td>
+                                                    Token
+                                                </td>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                                <td>
+                                                    AABCC-ABCSO-ABC1TS-ABC_AVD1
+                                                </td>
+                                                <td>
+                                                    Enabled
+                                                </td>
+                                                <td>
+                                                    No
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="btn btn-outline-secondary pull-right" data-bs-toggle="collapse" href="#search-sys-roles" role="button" aria-expanded="false" aria-controls="search-sys-roles">
+                            Search System Roles
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Routes-->
+        <div class="tab-pane fade" id="routes" role="tabpanel">
+            <div class="form-floating margin-top-10">
+                <div class="col-2">
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect">
+                                    <option value="0">Select a Route...</option>
+                                    <option value="1" selected>Privileged</option>
+                                    <option value="2">Authorized</option>
+                                </select>
+                                <label for="floatingSelect">Select a Route...</label>
+                            </div>
+                </div>
+                <div id="sys_routes_table" class="row margin-top-neg-20 margin-left-10">
+                    <div class="col-12">
+                        <div class="jumbotron">
+                            <table class="table table-sm table-hover table-borderless table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Step
+                                        </th>
+                                        <th>
+                                            IA Reviewer
+                                        </th>
+                                        <th>
+                                            Last Update
+                                        </th>
+                                        <th class="pull-right">
+                                            Reviewer Assignments
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="user_tables">
+                                    <tr>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            Priv Supervisor
+                                        </td>
+                                        <td>
+                                            05/15/2023 09:34:55
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-outline-primary pull-right" data-bs-toggle="modal" data-bs-target="#modal">
+                                                View Assigned Reviewers
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2
+                                        </td>
+                                        <td>
+                                            Priv Security Officer
+                                        </td>
+                                        <td>
+                                            06/17/2023 12:38:23
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-outline-primary pull-right" data-bs-toggle="modal" data-bs-target="#modal">
+                                                View Assigned Reviewers
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            3
+                                        </td>
+                                        <td>
+                                            Priv Information Owner
+                                        </td>
+                                        <td>
+                                            03/22/2023 11:14:05
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-outline-primary pull-right" data-bs-toggle="modal" data-bs-target="#modal">
+                                                View Assigned Reviewers
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            4
+                                        </td>
+                                        <td>
+                                            Priv ISSO
+                                        </td>
+                                        <td>
+                                            02/01/2023 16:22:45
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-outline-primary pull-right" data-bs-toggle="modal" data-bs-target="#modal">
+                                                View Assigned Reviewers
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--IA Reviewers-->
+        <div class="tab-pane fade" id="reviewers" role="tabpanel">
+                <div class="form-floating margin-top-10">
+                    <div id="sys_reviewers_table" class="row margin-top-neg-20 margin-left-10">
+                        <div class="col-12">
+                            <div class="jumbotron">
+                                <table class="table table-sm table-hover table-borderless table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Name
+                                            </th>
+                                            <th>
+                                                Org Group(s)
+                                            </th>
+                                            <th>
+                                                IA Reviewer Role
+                                            </th>
+                                            <th>
+                                                &nbsp;
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="user_tables">
+                                        <tr>
+                                            <td>
+                                                Hawkeye Pierce
+                                            </td>
+                                            <td>
+                                                ABC1 System Admins, ABC1 Auth Users
+                                            </td>
+                                            <td>
+                                                Priv Supervisor, Auth Supervisor,  User Manager
+                                            </td>
+                                            <td>
+                                                <a asp-page="user_mgmt_detail" type="button" class="btn btn-outline-success">Edit</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                Margaret Houlihan
+                                            </td>
+                                            <td>
+                                                ABC1 System Admins, ABC1 Auth Users
+                                            </td>
+                                            <td>
+                                                Priv Security Officer, Auth Security Officer
+                                            </td>
+                                            <td>
+                                                <a asp-page="user_mgmt_detail" type="button" class="btn btn-outline-success">Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Radar O'Reilly
+                                            </td>
+                                            <td>
+                                                ABC1 System Admins, ABC1 Auth Users
+                                            </td>
+                                            <td>
+                                                Priv Information Owner, Auth Information Owner,  User Manager
+                                            </td>
+                                            <td>
+                                                <a asp-page="user_mgmt_detail" type="button" class="btn btn-outline-success">Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Maxwell Klinger
+                                            </td>
+                                            <td>
+                                                ABC1 System Admins, ABC1 Auth Users
+                                            </td>
+                                            <td>
+                                                Priv ISSO, Auth ISSO, User Manager
+                                            </td>
+                                            <td>
+                                                <a asp-page="user_mgmt_detail" type="button" class="btn btn-outline-success">Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Charles Winchester
+                                            </td>
+                                            <td>
+                                                ABC1 System Admins, ABC1 Auth Users
+                                            </td>
+                                            <td>
+                                                User Manager
+                                            </td>
+                                            <td>
+                                                <a asp-page="user_mgmt_detail" type="button" class="btn btn-outline-success">Edit</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!--History-->
+        <div class="tab-pane fade" id="history" role="tabpanel">
+            <div class="form-floating margin-top-10">
+                <div id="sys_history_table" class="row margin-top-neg-20 margin-left-10">
+                    <div class="col-12">
+                        <div class="jumbotron">
+                            <table class="table table-sm table-hover table-borderless table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Date
+                                        </th>
+                                        <th>
+                                            Action By
+                                        </th>
+                                        <th>
+                                            Action
+                                        </th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody class="user_tables">
+                                    <tr>
+                                        <td>
+                                            05/10/2023 14:23:55
+                                        </td>
+                                        <td>
+                                            Hawkeye Pierce
+                                        </td>
+                                        <td>
+                                            New Role: ABC AVD Desktop (PIV)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            05/10/2023 14:23:55
+                                        </td>
+                                        <td>
+                                            Hawkeye Pierce
+                                        </td>
+                                        <td>
+                                            Edit Role: ABC Application User
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            05/10/2023 14:15:33
+                                        </td>
+                                        <td>
+                                            Hawkeye Pierce
+                                        </td>
+                                        <td>
+                                            New Role: ABC Application User
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            05/10/2023 13:45:35
+                                        </td>
+                                        <td>
+                                            Hawkeye Pierce
+                                        </td>
+                                        <td>
+                                            New Role: ABC Domain Administrator
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            05/10/2023 13:22:05
+                                        </td>
+                                        <td>
+                                            Hawkeye Pierce
+                                        </td>
+                                        <td>
+                                            New Role: ABC System Administrator
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Comments-->
+        <div class="tab-pane fade" id="comments" role="tabpanel">
+            <div class="form-floating margin-top-10">
+                <div id="sys_comments_table" class="row margin-top-neg-20 margin-left-10">
+                    <div class="col-12">
+                        <div class="jumbotron">
+                            <table class="table table-sm table-hover table-borderless table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Date
+                                        </th>
+                                        <th>
+                                            Comment By
+                                        </th>
+                                        <th>
+                                            Comment
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody class="user_tables">
+                                    <tr>
+                                        <td>
+                                            05/22/2023 14:23:55
+                                        </td>
+                                        <td>
+                                            Charles Winchester, III
+                                        </td>
+                                        <td>
+                                            I think that this page is done
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            05/21/2023 14:23:55
+                                        </td>
+                                        <td>
+                                            Hawkeye Pierce
+                                        </td>
+                                        <td>
+                                            Just in here adding new roles
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            05/20/2023 14:15:33
+                                        </td>
+                                        <td>
+                                            Hawkeye Pierce
+                                        </td>
+                                        <td>
+                                            Hello World
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            05/15/2023 13:45:35
+                                        </td>
+                                        <td>
+                                            Radar O'Reilly
+                                        </td>
+                                        <td>
+                                            Hopefully this makes Brian happy
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
